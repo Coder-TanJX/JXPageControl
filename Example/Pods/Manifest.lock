@@ -1,0 +1,16 @@
+PODS:
+  - JXPageControl (0.1.0)
+
+DEPENDENCIES:
+  - JXPageControl (from `../`)
+
+EXTERNAL SOURCES:
+  JXPageControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JXPageControl: 6537bd75d146f8dd289c20e99db7734ec463032e
+
+PODFILE CHECKSUM: fe75018273d3f91d83be98cbb7f354c35d3b9731
+
+COCOAPODS: 1.6.1

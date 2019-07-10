@@ -1,5 +1,5 @@
 import XCTest
-import JXPageControl
+//import JXPageControl
 
 class Tests: XCTestCase {
     

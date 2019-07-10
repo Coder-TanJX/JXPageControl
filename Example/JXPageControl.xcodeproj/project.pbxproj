@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F244DE322CC565F00D95502 /* JXPageControlExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F244DE222CC565F00D95502 /* JXPageControlExchange.swift */; };
+		1F244DE922CC741E00D95502 /* JXPageControlTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F244DE822CC741E00D95502 /* JXPageControlTool.swift */; };
+		1F264BFD22CDA54000C08D61 /* JXPageControlChameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264BFC22CDA54000C08D61 /* JXPageControlChameleon.swift */; };
+		1F2863F622AE039800C18DE0 /* JXPageControlFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2863F522AE039800C18DE0 /* JXPageControlFill.swift */; };
+		1F31574D22D5894D008955B5 /* JXPageControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31574C22D5894D008955B5 /* JXPageControlBase.swift */; };
+		1F6CC50A22ABA9450033EB98 /* JXPageControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CC50822ABA9450033EB98 /* JXPageControlType.swift */; };
+		1F6CC50B22ABA9450033EB98 /* JXPageControlJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CC50922ABA9450033EB98 /* JXPageControlJump.swift */; };
+		1F6CC50D22ABF3700033EB98 /* JXPageControlLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CC50C22ABF3700033EB98 /* JXPageControlLine.swift */; };
+		1F6CC50F22AC13510033EB98 /* JXPageControlBoldLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CC50E22AC13510033EB98 /* JXPageControlBoldLine.swift */; };
+		1F6CC51222ACEF3A0033EB98 /* JXPageControlEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CC51122ACEF3A0033EB98 /* JXPageControlEllipse.swift */; };
+		1FA7314422B0F55E005DF428 /* JXPageControlScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7314322B0F55E005DF428 /* JXPageControlScale.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -14,7 +25,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		67429F55855D77F92FC1DAAC /* Pods_JXPageControl_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE732A85388ABCEB27F1779D /* Pods_JXPageControl_Example.framework */; };
-		8C121AD2548924CFEED4532F /* Pods_JXPageControl_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CC8B28731D7E40C472C7AE /* Pods_JXPageControl_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +38,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2022475EB28DA4F7E79ECD61 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		43B346F57B28778FC3D9EDB8 /* JXPageControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JXPageControl.podspec; path = ../JXPageControl.podspec; sourceTree = "<group>"; };
-		4DC60609FF5B233D03BDE36D /* Pods-JXPageControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXPageControl_Tests.release.xcconfig"; path = "Target Support Files/Pods-JXPageControl_Tests/Pods-JXPageControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1F244DE222CC565F00D95502 /* JXPageControlExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlExchange.swift; sourceTree = "<group>"; };
+		1F244DE422CC592200D95502 /* JXPageControl_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXPageControl_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F244DE822CC741E00D95502 /* JXPageControlTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlTool.swift; sourceTree = "<group>"; };
+		1F264BFC22CDA54000C08D61 /* JXPageControlChameleon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlChameleon.swift; sourceTree = "<group>"; };
+		1F2863F522AE039800C18DE0 /* JXPageControlFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlFill.swift; sourceTree = "<group>"; };
+		1F31574C22D5894D008955B5 /* JXPageControlBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlBase.swift; sourceTree = "<group>"; };
+		1F6CC50822ABA9450033EB98 /* JXPageControlType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlType.swift; sourceTree = "<group>"; };
+		1F6CC50922ABA9450033EB98 /* JXPageControlJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlJump.swift; sourceTree = "<group>"; };
+		1F6CC50C22ABF3700033EB98 /* JXPageControlLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlLine.swift; sourceTree = "<group>"; };
+		1F6CC50E22AC13510033EB98 /* JXPageControlBoldLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlBoldLine.swift; sourceTree = "<group>"; };
+		1F6CC51122ACEF3A0033EB98 /* JXPageControlEllipse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlEllipse.swift; sourceTree = "<group>"; };
+		1FA7314322B0F55E005DF428 /* JXPageControlScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlScale.swift; sourceTree = "<group>"; };
+		2022475EB28DA4F7E79ECD61 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		43B346F57B28778FC3D9EDB8 /* JXPageControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JXPageControl.podspec; path = ../JXPageControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* JXPageControl_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JXPageControl_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +63,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		A8CB0AF3FED8097793856774 /* Pods-JXPageControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXPageControl_Example.release.xcconfig"; path = "Target Support Files/Pods-JXPageControl_Example/Pods-JXPageControl_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AC47C10AF61EDBD42216C3D7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AC47C10AF61EDBD42216C3D7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C7A289031C73B4FF5F3F6399 /* Pods-JXPageControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXPageControl_Example.debug.xcconfig"; path = "Target Support Files/Pods-JXPageControl_Example/Pods-JXPageControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D76167913BFCAB6AEFCCFD96 /* Pods-JXPageControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXPageControl_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JXPageControl_Tests/Pods-JXPageControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE732A85388ABCEB27F1779D /* Pods_JXPageControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXPageControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9CC8B28731D7E40C472C7AE /* Pods_JXPageControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXPageControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,22 +81,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C121AD2548924CFEED4532F /* Pods_JXPageControl_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F244DE122CC55B600D95502 /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				1F2863F522AE039800C18DE0 /* JXPageControlFill.swift */,
+				1F244DE222CC565F00D95502 /* JXPageControlExchange.swift */,
+				1F264BFC22CDA54000C08D61 /* JXPageControlChameleon.swift */,
+			);
+			path = Transform;
+			sourceTree = "<group>";
+		};
+		1F244DEA22CC87C500D95502 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				1F244DE822CC741E00D95502 /* JXPageControlTool.swift */,
+				1F6CC50822ABA9450033EB98 /* JXPageControlType.swift */,
+				1F31574C22D5894D008955B5 /* JXPageControlBase.swift */,
+				1F36F42E22D2210700804BB5 /* Scale */,
+				1F244DE122CC55B600D95502 /* Transform */,
+				1F6CC51022AC13B70033EB98 /* Jump */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		1F36F42E22D2210700804BB5 /* Scale */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7314322B0F55E005DF428 /* JXPageControlScale.swift */,
+			);
+			path = Scale;
+			sourceTree = "<group>";
+		};
+		1F6CC51022AC13B70033EB98 /* Jump */ = {
+			isa = PBXGroup;
+			children = (
+				1F6CC50922ABA9450033EB98 /* JXPageControlJump.swift */,
+				1F6CC50C22ABF3700033EB98 /* JXPageControlLine.swift */,
+				1F6CC50E22AC13510033EB98 /* JXPageControlBoldLine.swift */,
+				1F6CC51122ACEF3A0033EB98 /* JXPageControlEllipse.swift */,
+			);
+			path = Jump;
+			sourceTree = "<group>";
+		};
 		4FB7F95DA92E6371C2921764 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C7A289031C73B4FF5F3F6399 /* Pods-JXPageControl_Example.debug.xcconfig */,
 				A8CB0AF3FED8097793856774 /* Pods-JXPageControl_Example.release.xcconfig */,
-				D76167913BFCAB6AEFCCFD96 /* Pods-JXPageControl_Tests.debug.xcconfig */,
-				4DC60609FF5B233D03BDE36D /* Pods-JXPageControl_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,10 +164,12 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1F244DEA22CC87C500D95502 /* PageControl */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				1F244DE422CC592200D95502 /* JXPageControl_Example-Bridging-Header.h */,
 			);
 			name = "Example for JXPageControl";
 			path = JXPageControl;
@@ -155,7 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				DE732A85388ABCEB27F1779D /* Pods_JXPageControl_Example.framework */,
-				E9CC8B28731D7E40C472C7AE /* Pods_JXPageControl_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,7 +244,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JXPageControl_Tests" */;
 			buildPhases = (
-				9DBD39E175841F43D551FDB8 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -208,12 +265,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = ATRZR4BSXQ;
+						LastSwiftMigration = 1020;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -227,6 +285,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -284,28 +343,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9DBD39E175841F43D551FDB8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JXPageControl_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A61366E26C90924FB62A9D74 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,8 +372,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6CC50D22ABF3700033EB98 /* JXPageControlLine.swift in Sources */,
+				1F264BFD22CDA54000C08D61 /* JXPageControlChameleon.swift in Sources */,
+				1F2863F622AE039800C18DE0 /* JXPageControlFill.swift in Sources */,
+				1F6CC50F22AC13510033EB98 /* JXPageControlBoldLine.swift in Sources */,
+				1F6CC51222ACEF3A0033EB98 /* JXPageControlEllipse.swift in Sources */,
+				1F31574D22D5894D008955B5 /* JXPageControlBase.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				1F6CC50B22ABA9450033EB98 /* JXPageControlJump.swift in Sources */,
+				1F6CC50A22ABA9450033EB98 /* JXPageControlType.swift in Sources */,
+				1F244DE922CC741E00D95502 /* JXPageControlTool.swift in Sources */,
+				1F244DE322CC565F00D95502 /* JXPageControlExchange.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1FA7314422B0F55E005DF428 /* JXPageControlScale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,11 +530,15 @@
 			baseConfigurationReference = C7A289031C73B4FF5F3F6399 /* Pods-JXPageControl_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = ATRZR4BSXQ;
 				INFOPLIST_FILE = JXPageControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JXPageControl/JXPageControl_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -497,11 +549,14 @@
 			baseConfigurationReference = A8CB0AF3FED8097793856774 /* Pods-JXPageControl_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = ATRZR4BSXQ;
 				INFOPLIST_FILE = JXPageControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JXPageControl/JXPageControl_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -509,7 +564,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D76167913BFCAB6AEFCCFD96 /* Pods-JXPageControl_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -531,7 +585,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DC60609FF5B233D03BDE36D /* Pods-JXPageControl_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

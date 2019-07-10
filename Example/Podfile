@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'JXPageControl_Example' do
   pod 'JXPageControl', :path => '../'
-
-  target 'JXPageControl_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
