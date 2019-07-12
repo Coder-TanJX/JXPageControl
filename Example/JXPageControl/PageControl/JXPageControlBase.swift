@@ -80,31 +80,33 @@ import UIKit
     
     /// Inactive item tint color
     @IBInspectable public var inactiveColor: UIColor =
-        UIColor.groupTableViewBackground {
+        UIColor.groupTableViewBackground.withAlphaComponent(0.5) {
         didSet { inactiveHollowLayout() }
     }
     
     /// Active item ting color
     @IBInspectable public var activeColor: UIColor =
-        UIColor.orange {
+        UIColor.white {
         didSet { activeHollowLayout() }
     }
     
     /// Inactive item size
-    var inactiveSize: CGSize = CGSize(width: 10,
-                                      height: 10){
+    @IBInspectable public var inactiveSize: CGSize =
+        CGSize(width: 10,
+               height: 10){
         didSet {
             reloadLayout()
-            updateCurrentPage(currentIndex)
+            updateProgress(CGFloat(currentIndex))
         }
     }
     
     /// Active item size
-    var activeSize: CGSize = CGSize(width: 10,
-                                    height: 10){
+    @IBInspectable public var activeSize: CGSize =
+        CGSize(width: 10,
+               height: 10){
         didSet {
             reloadLayout()
-            updateCurrentPage(currentIndex)
+            updateProgress(CGFloat(currentIndex))
         }
     }
     
@@ -122,7 +124,7 @@ import UIKit
     @IBInspectable public var columnSpacing: CGFloat = 10.0 {
         didSet {
             reloadLayout()
-            updateCurrentPage(currentIndex)
+            updateProgress(CGFloat(currentIndex))
         }
     }
     
@@ -132,7 +134,7 @@ import UIKit
     }
     
     /// Active hollow figure
-    @IBInspectable public var isActiveHollow: Bool = true {
+    @IBInspectable public var isActiveHollow: Bool = false {
         didSet { activeHollowLayout() }
     }
     
@@ -140,7 +142,8 @@ import UIKit
     public var contentAlignment: JXPageControlAlignment =
         JXPageControlAlignment(.center,
                                .center) {
-        didSet { layoutContentView() }
+        didSet { reloadLayout()
+            updateProgress(CGFloat(currentIndex)) }
     }
     
     /// Refresh the data and UI again
@@ -193,7 +196,17 @@ import UIKit
         }
     }
     
-    func resetInactiveLayer() {}
+    func resetInactiveLayer() {
+        // clear data
+        inactiveLayer.forEach() { $0.removeFromSuperlayer() }
+        inactiveLayer = [CALayer]()
+        // set new layers
+        for _ in 0..<numberOfPages {
+            let layer = CALayer()
+            contentView.layer.addSublayer(layer)
+            inactiveLayer.append(layer)
+        }
+    }
     
     func resetActiveLayer() {}
     

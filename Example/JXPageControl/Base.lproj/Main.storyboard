@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ugt-22-neT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,352 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--入口-->
+        <scene sceneID="z7x-JD-vFC">
+            <objects>
+                <viewController id="uYI-OH-Uhw" customClass="MainVC" customModule="JXPageControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HH1-Gr-iFs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yjz-aP-HX7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WcR-ir-JS8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpS-yE-YUt">
+                                <rect key="frame" x="117" y="114" width="141" height="30"/>
+                                <state key="normal" title="JXPageControlJump"/>
+                                <connections>
+                                    <segue destination="eJu-0N-jir" kind="push" id="aW3-x6-MrB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttJ-1n-Y7M">
+                                <rect key="frame" x="117.5" y="174" width="140" height="30"/>
+                                <state key="normal" title="JXPageControlScale"/>
+                                <connections>
+                                    <segue destination="AqP-k6-WAZ" kind="push" id="362-I0-lP3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ak-6C-6ii">
+                                <rect key="frame" x="126.5" y="234" width="122" height="30"/>
+                                <state key="normal" title="JXPageControlFill"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivb-xS-7Jg">
+                                <rect key="frame" x="103" y="294" width="169" height="30"/>
+                                <state key="normal" title="JXPageControlExchange"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEq-vd-NSm">
+                                <rect key="frame" x="97.5" y="354" width="180" height="30"/>
+                                <state key="normal" title="JXPageControlChameleon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ttJ-1n-Y7M" firstAttribute="centerX" secondItem="WcR-ir-JS8" secondAttribute="centerX" id="2gc-iz-l9j"/>
+                            <constraint firstItem="HpS-yE-YUt" firstAttribute="centerX" secondItem="WcR-ir-JS8" secondAttribute="centerX" id="3v9-Wz-YMh"/>
+                            <constraint firstItem="1ak-6C-6ii" firstAttribute="centerX" secondItem="WcR-ir-JS8" secondAttribute="centerX" id="DJ6-m4-PAm"/>
+                            <constraint firstItem="Ivb-xS-7Jg" firstAttribute="centerX" secondItem="WcR-ir-JS8" secondAttribute="centerX" id="ShR-gC-DfR"/>
+                            <constraint firstItem="1ak-6C-6ii" firstAttribute="top" secondItem="ttJ-1n-Y7M" secondAttribute="bottom" constant="30" id="T8x-lz-5Mq"/>
+                            <constraint firstItem="HpS-yE-YUt" firstAttribute="centerX" secondItem="WcR-ir-JS8" secondAttribute="centerX" id="cpV-rq-mSd"/>
+                            <constraint firstItem="HpS-yE-YUt" firstAttribute="top" secondItem="HH1-Gr-iFs" secondAttribute="bottom" constant="50" id="dbN-7e-ixR"/>
+                            <constraint firstItem="Ivb-xS-7Jg" firstAttribute="top" secondItem="1ak-6C-6ii" secondAttribute="bottom" constant="30" id="eZB-KS-SUf"/>
+                            <constraint firstItem="cEq-vd-NSm" firstAttribute="centerX" secondItem="WcR-ir-JS8" secondAttribute="centerX" id="gqa-9x-oK5"/>
+                            <constraint firstItem="ttJ-1n-Y7M" firstAttribute="top" secondItem="HpS-yE-YUt" secondAttribute="bottom" constant="30" id="vw1-Vs-FEb"/>
+                            <constraint firstItem="cEq-vd-NSm" firstAttribute="top" secondItem="Ivb-xS-7Jg" secondAttribute="bottom" constant="30" id="wXT-Rm-r4p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="入口" id="fsc-6f-xLM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JrS-SV-foI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47.200000000000003" y="-251.42428785607197"/>
+        </scene>
+        <!--jump-->
+        <scene sceneID="oTF-31-dGK">
+            <objects>
+                <viewController id="eJu-0N-jir" customClass="JumpVC" customModule="JXPageControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y7r-P7-x7R"/>
+                        <viewControllerLayoutGuide type="bottom" id="lcd-sP-DMx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mZa-m8-eGD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCV-SX-DhC">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2u-pS-KC3" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1500" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caU-pe-dfn">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.34509803919999998" blue="0.38431372549999998" alpha="0.20743257705479451" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqq-kV-5dl">
+                                                <rect key="frame" x="750" y="0.0" width="375" height="100"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.34509803919999998" blue="0.38431372549999998" alpha="0.76709653253424659" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1S-zO-DBu">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="100"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.34509803919999998" blue="0.38431372549999998" alpha="0.3435894691780822" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6t-iK-Ngj">
+                                                <rect key="frame" x="1125" y="0.0" width="375" height="100"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.34509803919999998" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="j6t-iK-Ngj" firstAttribute="leading" secondItem="Sqq-kV-5dl" secondAttribute="trailing" id="4Oz-uR-j9n"/>
+                                            <constraint firstAttribute="bottom" secondItem="Sqq-kV-5dl" secondAttribute="bottom" id="5Ve-1o-EJE"/>
+                                            <constraint firstItem="Sqq-kV-5dl" firstAttribute="top" secondItem="k2u-pS-KC3" secondAttribute="top" id="CzY-7C-PYY"/>
+                                            <constraint firstItem="j6t-iK-Ngj" firstAttribute="top" secondItem="k2u-pS-KC3" secondAttribute="top" id="HCR-CF-61m"/>
+                                            <constraint firstItem="caU-pe-dfn" firstAttribute="leading" secondItem="k2u-pS-KC3" secondAttribute="leading" id="KmR-I2-26a"/>
+                                            <constraint firstAttribute="trailing" secondItem="j6t-iK-Ngj" secondAttribute="trailing" id="PI1-Kt-2tp"/>
+                                            <constraint firstItem="Sqq-kV-5dl" firstAttribute="width" secondItem="caU-pe-dfn" secondAttribute="width" id="QAB-17-PMp"/>
+                                            <constraint firstItem="p1S-zO-DBu" firstAttribute="leading" secondItem="caU-pe-dfn" secondAttribute="trailing" id="UJY-cy-ZCr"/>
+                                            <constraint firstItem="Sqq-kV-5dl" firstAttribute="leading" secondItem="p1S-zO-DBu" secondAttribute="trailing" id="Vbh-Ug-CLh"/>
+                                            <constraint firstAttribute="bottom" secondItem="caU-pe-dfn" secondAttribute="bottom" id="YE3-Pv-Fvz"/>
+                                            <constraint firstItem="p1S-zO-DBu" firstAttribute="width" secondItem="caU-pe-dfn" secondAttribute="width" id="a9r-xk-0NQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="p1S-zO-DBu" secondAttribute="bottom" id="bxt-wI-GUk"/>
+                                            <constraint firstItem="j6t-iK-Ngj" firstAttribute="width" secondItem="caU-pe-dfn" secondAttribute="width" id="cKQ-im-Peb"/>
+                                            <constraint firstItem="caU-pe-dfn" firstAttribute="top" secondItem="k2u-pS-KC3" secondAttribute="top" id="crE-M6-Km4"/>
+                                            <constraint firstItem="p1S-zO-DBu" firstAttribute="top" secondItem="k2u-pS-KC3" secondAttribute="top" id="e9K-bB-KQ8"/>
+                                            <constraint firstAttribute="bottom" secondItem="j6t-iK-Ngj" secondAttribute="bottom" id="wYb-GA-kke"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="k2u-pS-KC3" secondAttribute="bottom" id="6Zy-9l-ad8"/>
+                                    <constraint firstItem="k2u-pS-KC3" firstAttribute="leading" secondItem="iCV-SX-DhC" secondAttribute="leading" id="Lie-Fo-QIa"/>
+                                    <constraint firstAttribute="height" constant="100" id="NnB-Jx-LSc"/>
+                                    <constraint firstItem="k2u-pS-KC3" firstAttribute="height" secondItem="iCV-SX-DhC" secondAttribute="height" id="Wtr-5W-9QJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="k2u-pS-KC3" secondAttribute="trailing" id="t04-ma-P3q"/>
+                                    <constraint firstItem="k2u-pS-KC3" firstAttribute="top" secondItem="iCV-SX-DhC" secondAttribute="top" id="yfP-f8-OFO"/>
+                                    <constraint firstItem="k2u-pS-KC3" firstAttribute="width" secondItem="iCV-SX-DhC" secondAttribute="width" multiplier="4" id="zMs-ob-9zx"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;- 左右滑动 -&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAN-nr-Z1f">
+                                <rect key="frame" x="16" y="521" width="343" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adc-Zr-yfE" userLabel="default" customClass="JXPageControlJump" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="84" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qgN-lx-GvM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gak-aX-uIg" userLabel="NoFlexble" customClass="JXPageControlJump" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="119" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexible" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uGq-fa-LIO" userLabel="NoAnimation" customClass="JXPageControlJump" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="154" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAnimation" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzD-G0-H4g" userLabel="NoAnimationAndFlexble" customClass="JXPageControlJump" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="189" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexible" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAnimation" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fo1-wl-euX" userLabel="inactiveHollow" customClass="JXPageControlJump" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="224" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5I-pG-BQG" userLabel="activeHollow" customClass="JXPageControlJump" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="259" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isActiveHollow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOy-O5-9fc" userLabel="allHollow" customClass="JXPageControlJump" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="294" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isActiveHollow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YK-as-Qtd" userLabel="smallActive" customClass="JXPageControlJump" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="329" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
+                                        <size key="value" width="16" height="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kh5-g5-lht" userLabel="line" customClass="JXPageControlLine" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="364" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAy-nK-HeN" userLabel="boldLine" customClass="JXPageControlBoldLine" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="399" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3A-Qh-1es" userLabel="ellipse" customClass="JXPageControlEllipse" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="434" width="343" height="30"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kh5-g5-lht" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="1pW-EZ-Zxn"/>
+                            <constraint firstItem="fo1-wl-euX" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="2w9-dP-oqU"/>
+                            <constraint firstItem="n3A-Qh-1es" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="46O-Po-2ql"/>
+                            <constraint firstItem="fAy-nK-HeN" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="558-g5-bbg"/>
+                            <constraint firstItem="Kh5-g5-lht" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="6pB-Ir-VfG"/>
+                            <constraint firstItem="n3A-Qh-1es" firstAttribute="top" secondItem="fAy-nK-HeN" secondAttribute="bottom" constant="5" id="8cG-n3-6uM"/>
+                            <constraint firstItem="p5I-pG-BQG" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="9Xv-e1-Pqq"/>
+                            <constraint firstItem="6YK-as-Qtd" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="AQH-aj-rAK"/>
+                            <constraint firstItem="Gak-aX-uIg" firstAttribute="top" secondItem="Adc-Zr-yfE" secondAttribute="bottom" constant="5" id="AaV-v9-psp"/>
+                            <constraint firstItem="p5I-pG-BQG" firstAttribute="top" secondItem="fo1-wl-euX" secondAttribute="bottom" constant="5" id="DdT-dy-56u"/>
+                            <constraint firstItem="xzD-G0-H4g" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="EdX-To-f8b"/>
+                            <constraint firstItem="uGq-fa-LIO" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="FRV-nf-tKl"/>
+                            <constraint firstItem="Gak-aX-uIg" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="Fve-po-elU"/>
+                            <constraint firstItem="fo1-wl-euX" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="Kgu-5S-OUd"/>
+                            <constraint firstItem="n3A-Qh-1es" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="MTN-8p-g5v"/>
+                            <constraint firstItem="JOy-O5-9fc" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="Mhn-3g-YGb"/>
+                            <constraint firstItem="ZAN-nr-Z1f" firstAttribute="leading" secondItem="mZa-m8-eGD" secondAttribute="leadingMargin" id="NCQ-Tv-GhD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Adc-Zr-yfE" secondAttribute="trailing" id="NFc-KO-fAX"/>
+                            <constraint firstItem="Adc-Zr-yfE" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="Ngv-oF-Csj"/>
+                            <constraint firstItem="Adc-Zr-yfE" firstAttribute="leading" secondItem="mZa-m8-eGD" secondAttribute="leadingMargin" id="NvF-Rz-1mi"/>
+                            <constraint firstItem="fo1-wl-euX" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="RyT-Lt-3az"/>
+                            <constraint firstItem="Adc-Zr-yfE" firstAttribute="top" secondItem="y7r-P7-x7R" secondAttribute="bottom" constant="20" id="ThB-db-0bc"/>
+                            <constraint firstItem="fo1-wl-euX" firstAttribute="top" secondItem="xzD-G0-H4g" secondAttribute="bottom" constant="5" id="Ukr-AO-aSN"/>
+                            <constraint firstItem="6YK-as-Qtd" firstAttribute="top" secondItem="JOy-O5-9fc" secondAttribute="bottom" constant="5" id="X7v-jb-xrz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZAN-nr-Z1f" secondAttribute="trailing" id="ZxV-We-TIw"/>
+                            <constraint firstItem="xzD-G0-H4g" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="bSD-tk-1H7"/>
+                            <constraint firstItem="fAy-nK-HeN" firstAttribute="top" secondItem="Kh5-g5-lht" secondAttribute="bottom" constant="5" id="bum-W1-al0"/>
+                            <constraint firstItem="uGq-fa-LIO" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="cE1-6P-0a9"/>
+                            <constraint firstItem="Kh5-g5-lht" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="d66-YI-Opg"/>
+                            <constraint firstItem="fAy-nK-HeN" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="dUo-z2-CAJ"/>
+                            <constraint firstItem="Gak-aX-uIg" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="dv4-eD-fZj"/>
+                            <constraint firstItem="JOy-O5-9fc" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="e9t-hO-jyK"/>
+                            <constraint firstItem="p5I-pG-BQG" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="evs-el-obl"/>
+                            <constraint firstItem="6YK-as-Qtd" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="gKp-sI-RHM"/>
+                            <constraint firstItem="uGq-fa-LIO" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="hJP-nZ-Mhc"/>
+                            <constraint firstItem="JOy-O5-9fc" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="heR-IY-Tn4"/>
+                            <constraint firstItem="p5I-pG-BQG" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="kCc-lc-4u3"/>
+                            <constraint firstItem="uGq-fa-LIO" firstAttribute="top" secondItem="Gak-aX-uIg" secondAttribute="bottom" constant="5" id="kty-TT-Jj6"/>
+                            <constraint firstItem="xzD-G0-H4g" firstAttribute="top" secondItem="uGq-fa-LIO" secondAttribute="bottom" constant="5" id="lGx-cx-4eP"/>
+                            <constraint firstAttribute="trailing" secondItem="iCV-SX-DhC" secondAttribute="trailing" id="lUI-Or-mEe"/>
+                            <constraint firstItem="6YK-as-Qtd" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="lq1-l8-JAU"/>
+                            <constraint firstItem="Adc-Zr-yfE" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="n56-Nb-l36"/>
+                            <constraint firstItem="Gak-aX-uIg" firstAttribute="height" secondItem="Adc-Zr-yfE" secondAttribute="height" id="nxi-7a-IA7"/>
+                            <constraint firstItem="iCV-SX-DhC" firstAttribute="top" secondItem="ZAN-nr-Z1f" secondAttribute="bottom" constant="20" id="oUc-Tc-jEk"/>
+                            <constraint firstItem="n3A-Qh-1es" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="ow7-vA-j61"/>
+                            <constraint firstItem="iCV-SX-DhC" firstAttribute="leading" secondItem="mZa-m8-eGD" secondAttribute="leading" id="rWq-af-OMb"/>
+                            <constraint firstItem="xzD-G0-H4g" firstAttribute="centerX" secondItem="mZa-m8-eGD" secondAttribute="centerX" id="s9j-vF-lKZ"/>
+                            <constraint firstItem="Kh5-g5-lht" firstAttribute="top" secondItem="6YK-as-Qtd" secondAttribute="bottom" constant="5" id="tqG-oR-ibD"/>
+                            <constraint firstItem="JOy-O5-9fc" firstAttribute="top" secondItem="p5I-pG-BQG" secondAttribute="bottom" constant="5" id="vdT-q7-hU7"/>
+                            <constraint firstItem="fAy-nK-HeN" firstAttribute="width" secondItem="Adc-Zr-yfE" secondAttribute="width" id="x23-Ky-EqI"/>
+                            <constraint firstItem="lcd-sP-DMx" firstAttribute="top" secondItem="iCV-SX-DhC" secondAttribute="bottom" id="yt3-Oj-NC2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="jump" id="jMD-Du-6NV"/>
+                    <connections>
+                        <outlet property="NoAnimation" destination="uGq-fa-LIO" id="6jI-jy-Nzq"/>
+                        <outlet property="NoAnimationAndFlexble" destination="xzD-G0-H4g" id="VMf-gS-PDb"/>
+                        <outlet property="NoFlexble" destination="Gak-aX-uIg" id="h10-JM-1AQ"/>
+                        <outlet property="activeHollow" destination="p5I-pG-BQG" id="lEa-hm-f6R"/>
+                        <outlet property="allHollow" destination="JOy-O5-9fc" id="Icm-lZ-Yre"/>
+                        <outlet property="boldLine" destination="fAy-nK-HeN" id="ROY-lP-hhl"/>
+                        <outlet property="default" destination="Adc-Zr-yfE" id="JA7-QO-5ta"/>
+                        <outlet property="ellipse" destination="n3A-Qh-1es" id="IqL-0R-gna"/>
+                        <outlet property="inactiveHollow" destination="fo1-wl-euX" id="gHe-oQ-Ezf"/>
+                        <outlet property="line" destination="Kh5-g5-lht" id="iEb-9o-vMe"/>
+                        <outlet property="scrollView" destination="iCV-SX-DhC" id="N6k-Ep-RDo"/>
+                        <outlet property="smallActive" destination="6YK-as-Qtd" id="cRu-0K-Qb1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDE-t0-zjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="-1066.4167916041979"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -68,6 +414,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAnimation" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rX9-8v-MqY" customClass="JXPageControlExchange" customModule="JXPageControl_Example" customModuleProvider="target">
@@ -94,6 +441,14 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="diameter">
                                         <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isActiveHollow" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
+                                        <size key="value" width="9" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -139,57 +494,152 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="-3.1484257871064472"/>
+            <point key="canvasLocation" x="3119" y="165"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="vST-Qz-f04">
+        <!--Navigation Controller-->
+        <scene sceneID="svU-dy-Jn6">
             <objects>
-                <viewController id="YOn-SE-uJo" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ugt-22-neT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lg2-08-ANC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uYI-OH-Uhw" kind="relationship" relationship="rootViewController" id="ima-3f-XfA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxV-v7-w0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-776.79999999999995" y="-250.52473763118442"/>
+        </scene>
+        <!--Scare-->
+        <scene sceneID="4ag-Ef-VsH">
+            <objects>
+                <viewController id="AqP-k6-WAZ" customClass="ScareVC" customModule="JXPageControl_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1Kj-bQ-Och"/>
-                        <viewControllerLayoutGuide type="bottom" id="LEc-3v-d9H"/>
+                        <viewControllerLayoutGuide type="top" id="0BC-ed-VVr"/>
+                        <viewControllerLayoutGuide type="bottom" id="WGk-LG-cQJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gl6-9D-xUc">
+                    <view key="view" contentMode="scaleToFill" id="lZg-3Z-jAN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tgx-Mw-cTI" customClass="JXPageControlJump" customModule="JXPageControl">
-                                <rect key="frame" x="88" y="251" width="227" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMm-JN-fgx">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0c-0P-rpR" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1500" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgr-rx-Tg9">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.34509803919999998" blue="0.38431372549999998" alpha="0.20743257709999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVr-3q-wmt">
+                                                <rect key="frame" x="750" y="0.0" width="375" height="100"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.34509803919999998" blue="0.38431372549999998" alpha="0.76709653249999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GY-1x-9A1">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="100"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.34509803919999998" blue="0.38431372549999998" alpha="0.3435894692" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwA-fF-fBh">
+                                                <rect key="frame" x="1125" y="0.0" width="375" height="100"/>
+                                                <color key="backgroundColor" red="0.97647058819999999" green="0.34509803919999998" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="DVr-3q-wmt" firstAttribute="width" secondItem="Cgr-rx-Tg9" secondAttribute="width" id="2Bj-E4-Xqy"/>
+                                            <constraint firstItem="7GY-1x-9A1" firstAttribute="leading" secondItem="Cgr-rx-Tg9" secondAttribute="trailing" id="BfY-q4-Iri"/>
+                                            <constraint firstItem="DVr-3q-wmt" firstAttribute="top" secondItem="K0c-0P-rpR" secondAttribute="top" id="DfC-pO-KXr"/>
+                                            <constraint firstItem="Cgr-rx-Tg9" firstAttribute="top" secondItem="K0c-0P-rpR" secondAttribute="top" id="FTq-jT-vMf"/>
+                                            <constraint firstItem="7GY-1x-9A1" firstAttribute="top" secondItem="K0c-0P-rpR" secondAttribute="top" id="JtL-jW-Wyz"/>
+                                            <constraint firstItem="GwA-fF-fBh" firstAttribute="top" secondItem="K0c-0P-rpR" secondAttribute="top" id="PBH-5B-wTp"/>
+                                            <constraint firstItem="DVr-3q-wmt" firstAttribute="leading" secondItem="7GY-1x-9A1" secondAttribute="trailing" id="PgP-FA-fvI"/>
+                                            <constraint firstAttribute="bottom" secondItem="DVr-3q-wmt" secondAttribute="bottom" id="Qju-qJ-7my"/>
+                                            <constraint firstItem="GwA-fF-fBh" firstAttribute="width" secondItem="Cgr-rx-Tg9" secondAttribute="width" id="Rad-nI-YBy"/>
+                                            <constraint firstItem="Cgr-rx-Tg9" firstAttribute="leading" secondItem="K0c-0P-rpR" secondAttribute="leading" id="S4k-BC-2qm"/>
+                                            <constraint firstAttribute="bottom" secondItem="GwA-fF-fBh" secondAttribute="bottom" id="VSj-tq-2eO"/>
+                                            <constraint firstAttribute="bottom" secondItem="Cgr-rx-Tg9" secondAttribute="bottom" id="bgp-b7-rQv"/>
+                                            <constraint firstItem="7GY-1x-9A1" firstAttribute="width" secondItem="Cgr-rx-Tg9" secondAttribute="width" id="d2C-bR-i3S"/>
+                                            <constraint firstAttribute="trailing" secondItem="GwA-fF-fBh" secondAttribute="trailing" id="jHf-aA-6F3"/>
+                                            <constraint firstAttribute="bottom" secondItem="7GY-1x-9A1" secondAttribute="bottom" id="uoC-S4-ALG"/>
+                                            <constraint firstItem="GwA-fF-fBh" firstAttribute="leading" secondItem="DVr-3q-wmt" secondAttribute="trailing" id="uqx-Xe-MR1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="K0c-0P-rpR" secondAttribute="trailing" id="0hD-7B-CWt"/>
+                                    <constraint firstItem="K0c-0P-rpR" firstAttribute="width" secondItem="DMm-JN-fgx" secondAttribute="width" multiplier="4" id="BE2-7g-j0O"/>
+                                    <constraint firstItem="K0c-0P-rpR" firstAttribute="top" secondItem="DMm-JN-fgx" secondAttribute="top" id="LZm-6j-gep"/>
+                                    <constraint firstItem="K0c-0P-rpR" firstAttribute="height" secondItem="DMm-JN-fgx" secondAttribute="height" id="Ob1-Ur-8Jk"/>
+                                    <constraint firstAttribute="bottom" secondItem="K0c-0P-rpR" secondAttribute="bottom" id="Sxx-GC-gph"/>
+                                    <constraint firstAttribute="height" constant="100" id="f00-G9-69h"/>
+                                    <constraint firstItem="K0c-0P-rpR" firstAttribute="leading" secondItem="DMm-JN-fgx" secondAttribute="leading" id="zVv-Z4-6Al"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;- 左右滑动 -&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaU-MD-LWE">
+                                <rect key="frame" x="16" y="521" width="343" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-g3-EwH" userLabel="default" customClass="JXPageControlScale" customModule="JXPageControl_Example" customModuleProvider="target">
+                                <rect key="frame" x="16" y="84" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YoW-xQ-nlQ"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="currentPage">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
-                                        <color key="value" red="0.99215686270000003" green="0.65490196079999996" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
-                                        <color key="value" red="0.086274509799999996" green="0.34509803919999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="10" height="10"/>
+                                        <size key="value" width="20" height="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="10" height="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="columnSpacing">
-                                        <real key="value" value="10"/>
+                                        <size key="value" width="20" height="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DMm-JN-fgx" secondAttribute="trailing" id="O74-N4-zcx"/>
+                            <constraint firstItem="cyj-g3-EwH" firstAttribute="leading" secondItem="lZg-3Z-jAN" secondAttribute="leadingMargin" id="Qjh-gN-qG6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cyj-g3-EwH" secondAttribute="trailing" id="RRa-ZH-MK7"/>
+                            <constraint firstItem="DMm-JN-fgx" firstAttribute="leading" secondItem="lZg-3Z-jAN" secondAttribute="leading" id="TNF-ah-DgY"/>
+                            <constraint firstItem="WGk-LG-cQJ" firstAttribute="top" secondItem="DMm-JN-fgx" secondAttribute="bottom" id="dPe-nx-k5Q"/>
+                            <constraint firstItem="cyj-g3-EwH" firstAttribute="centerX" secondItem="lZg-3Z-jAN" secondAttribute="centerX" id="f7R-XU-RYs"/>
+                            <constraint firstItem="DMm-JN-fgx" firstAttribute="top" secondItem="xaU-MD-LWE" secondAttribute="bottom" constant="20" id="ffk-aQ-baK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xaU-MD-LWE" secondAttribute="trailing" id="gZr-1E-zGp"/>
+                            <constraint firstItem="cyj-g3-EwH" firstAttribute="top" secondItem="0BC-ed-VVr" secondAttribute="bottom" constant="20" id="iNq-rO-UpY"/>
+                            <constraint firstItem="cyj-g3-EwH" firstAttribute="centerX" secondItem="lZg-3Z-jAN" secondAttribute="centerX" id="jhQ-fw-qnW"/>
+                            <constraint firstItem="xaU-MD-LWE" firstAttribute="leading" secondItem="lZg-3Z-jAN" secondAttribute="leadingMargin" id="zLs-Ng-75z"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Scare" id="1rQ-Zd-v90"/>
+                    <connections>
+                        <outlet property="default" destination="cyj-g3-EwH" id="h9w-Bc-hUd"/>
+                        <outlet property="scrollView" destination="DMm-JN-fgx" id="nvm-Dz-zIw"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cxJ-cP-7yU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FaK-2n-Ayr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071" y="6"/>
+            <point key="canvasLocation" x="916" y="-367"/>
         </scene>
     </scenes>
 </document>

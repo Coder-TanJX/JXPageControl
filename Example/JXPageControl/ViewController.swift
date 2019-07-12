@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
+        self.automaticallyAdjustsScrollViewInsets = false
+        
         scrollView.isPagingEnabled = true
 
         view.addSubview(jump)
@@ -66,8 +68,8 @@ extension ViewController: UIScrollViewDelegate {
         fill.progress = progress
         scare.progress = progress
         jumpCode.progress = progress
-//        exchange.progress = progress
-//        system.progress = progress
+        exchange.progress = progress
+        system.progress = progress
 //        print(progress)
         if tempIndex != currentPage {
             tempIndex = currentPage
@@ -78,7 +80,7 @@ extension ViewController: UIScrollViewDelegate {
 //            fill.currentPage = currentPage
 //            scare.currentPage = currentPage
 //            jumpCode.currentPage = currentPage
-            exchange.currentPage = currentPage
+//            exchange.currentPage = currentPage
 //            system.currentPage = currentPage
         }
         
@@ -89,15 +91,15 @@ extension ViewController: UIScrollViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        jumpCode.contentAlignment = JXPageControlAlignment(horizon: .right,
 //                                                       vertical: .center)
-//        jump.progress = 3
-//        line.progress = 3
-//        boldLine.progress = 3
-//        ellipse.progress = 3
-//        fill.progress = 3
-//        scare.progress = 3
-//        jumpCode.progress = 3
-//        exchange.progress = 3
-//        system.progress = 3
+        jump.progress = 3
+        line.progress = 3
+        boldLine.progress = 3
+        ellipse.progress = 3
+        fill.progress = 3
+        scare.progress = 3
+        jumpCode.progress = 3
+        exchange.progress = 3
+        system.progress = 3
 //        scrollView.contentOffset.x = scrollView.bounds.width * 3
 //        scrollView.delegate = self
         
@@ -106,10 +108,10 @@ extension ViewController: UIScrollViewDelegate {
 //        line.currentPage = 3
 //        boldLine.currentPage = 3
 //        ellipse.currentPage = 3
-        fill.currentPage = 3
-        scare.currentPage = 3
+//        fill.currentPage = 3
+//        scare.currentPage = 3
 //        jumpCode.progress = 3
-        exchange.currentPage = 3
+//        exchange.currentPage = 3
 //        system.progress = 3
         scrollView.contentOffset.x = scrollView.bounds.width * 3
         scrollView.delegate = self

@@ -9,6 +9,10 @@ import UIKit
 
 @IBDesignable public class JXPageControlJump: JXPageControlBase {
     
+    override func setBase() {
+        super.setBase()
+    }
+    
     // MARK: - -------------------------- Custom property list --------------------------
     @IBInspectable public var isFlexible: Bool = true
     
@@ -120,22 +124,9 @@ import UIKit
     
     // MARK: - -------------------------- Reset --------------------------
     
-    override func resetInactiveLayer() {
-        // clear data
-        inactiveLayer.forEach() { $0.removeFromSuperlayer() }
-        inactiveLayer = [CALayer]()
-        // set new layers
-        for _ in 0..<numberOfPages {
-            let layer = CALayer()
-            contentView.layer.addSublayer(layer)
-            inactiveLayer.append(layer)
-        }
-    }
-    
     override func resetActiveLayer() {
         activeLayer?.removeFromSuperlayer()
         activeLayer = CALayer()
-        activeLayer?.cornerRadius = activeSize.height * 0.5
         contentView.layer.addSublayer(activeLayer!)
     }
     
@@ -147,6 +138,7 @@ import UIKit
                                     y: y,
                                     width: activeSize.width,
                                     height: activeSize.height)
+        activeLayer?.cornerRadius = activeSize.height * 0.5
         activeHollowLayout()
     }
     

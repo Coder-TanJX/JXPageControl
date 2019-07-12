@@ -11,6 +11,9 @@
 		1F244DE922CC741E00D95502 /* JXPageControlTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F244DE822CC741E00D95502 /* JXPageControlTool.swift */; };
 		1F264BFD22CDA54000C08D61 /* JXPageControlChameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264BFC22CDA54000C08D61 /* JXPageControlChameleon.swift */; };
 		1F2863F622AE039800C18DE0 /* JXPageControlFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2863F522AE039800C18DE0 /* JXPageControlFill.swift */; };
+		1F2E424A22D826B3002604B9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E424922D826B3002604B9 /* MainVC.swift */; };
+		1F2E425222D828AC002604B9 /* JumpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E425122D828AC002604B9 /* JumpVC.swift */; };
+		1F2E425422D871CB002604B9 /* ScareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E425322D871CB002604B9 /* ScareVC.swift */; };
 		1F31574D22D5894D008955B5 /* JXPageControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31574C22D5894D008955B5 /* JXPageControlBase.swift */; };
 		1F6CC50A22ABA9450033EB98 /* JXPageControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CC50822ABA9450033EB98 /* JXPageControlType.swift */; };
 		1F6CC50B22ABA9450033EB98 /* JXPageControlJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6CC50922ABA9450033EB98 /* JXPageControlJump.swift */; };
@@ -43,6 +46,9 @@
 		1F244DE822CC741E00D95502 /* JXPageControlTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlTool.swift; sourceTree = "<group>"; };
 		1F264BFC22CDA54000C08D61 /* JXPageControlChameleon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlChameleon.swift; sourceTree = "<group>"; };
 		1F2863F522AE039800C18DE0 /* JXPageControlFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlFill.swift; sourceTree = "<group>"; };
+		1F2E424922D826B3002604B9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		1F2E425122D828AC002604B9 /* JumpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpVC.swift; sourceTree = "<group>"; };
+		1F2E425322D871CB002604B9 /* ScareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScareVC.swift; sourceTree = "<group>"; };
 		1F31574C22D5894D008955B5 /* JXPageControlBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlBase.swift; sourceTree = "<group>"; };
 		1F6CC50822ABA9450033EB98 /* JXPageControlType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlType.swift; sourceTree = "<group>"; };
 		1F6CC50922ABA9450033EB98 /* JXPageControlJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPageControlJump.swift; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		1F244DE122CC55B600D95502 /* Transform */ = {
 			isa = PBXGroup;
 			children = (
+				1FA7314322B0F55E005DF428 /* JXPageControlScale.swift */,
 				1F2863F522AE039800C18DE0 /* JXPageControlFill.swift */,
 				1F244DE222CC565F00D95502 /* JXPageControlExchange.swift */,
 				1F264BFC22CDA54000C08D61 /* JXPageControlChameleon.swift */,
@@ -103,19 +110,10 @@
 				1F244DE822CC741E00D95502 /* JXPageControlTool.swift */,
 				1F6CC50822ABA9450033EB98 /* JXPageControlType.swift */,
 				1F31574C22D5894D008955B5 /* JXPageControlBase.swift */,
-				1F36F42E22D2210700804BB5 /* Scale */,
 				1F244DE122CC55B600D95502 /* Transform */,
 				1F6CC51022AC13B70033EB98 /* Jump */,
 			);
 			path = PageControl;
-			sourceTree = "<group>";
-		};
-		1F36F42E22D2210700804BB5 /* Scale */ = {
-			isa = PBXGroup;
-			children = (
-				1FA7314322B0F55E005DF428 /* JXPageControlScale.swift */,
-			);
-			path = Scale;
 			sourceTree = "<group>";
 		};
 		1F6CC51022AC13B70033EB98 /* Jump */ = {
@@ -164,6 +162,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1F2E424922D826B3002604B9 /* MainVC.swift */,
+				1F2E425122D828AC002604B9 /* JumpVC.swift */,
+				1F2E425322D871CB002604B9 /* ScareVC.swift */,
 				1F244DEA22CC87C500D95502 /* PageControl */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -372,7 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2E425422D871CB002604B9 /* ScareVC.swift in Sources */,
 				1F6CC50D22ABF3700033EB98 /* JXPageControlLine.swift in Sources */,
+				1F2E424A22D826B3002604B9 /* MainVC.swift in Sources */,
 				1F264BFD22CDA54000C08D61 /* JXPageControlChameleon.swift in Sources */,
 				1F2863F622AE039800C18DE0 /* JXPageControlFill.swift in Sources */,
 				1F6CC50F22AC13510033EB98 /* JXPageControlBoldLine.swift in Sources */,
@@ -382,6 +385,7 @@
 				1F6CC50B22ABA9450033EB98 /* JXPageControlJump.swift in Sources */,
 				1F6CC50A22ABA9450033EB98 /* JXPageControlType.swift in Sources */,
 				1F244DE922CC741E00D95502 /* JXPageControlTool.swift in Sources */,
+				1F2E425222D828AC002604B9 /* JumpVC.swift in Sources */,
 				1F244DE322CC565F00D95502 /* JXPageControlExchange.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				1FA7314422B0F55E005DF428 /* JXPageControlScale.swift in Sources */,

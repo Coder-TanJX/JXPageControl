@@ -1,100 +1,137 @@
 //
-//  JXPageControlChameleon.swift
+//  JXPageControlScale.swift
 //  JXPageControl_Example
 //
-//  Created by 谭家祥 on 2019/7/4.
+//  Created by 谭家祥 on 2019/6/12.
 //  Copyright © 2019 CocoaPods. All rights reserved.
 //
 
 import UIKit
 
-@IBDesignable public class JXPageControlChameleon: JXPageControlBase {
+@IBDesignable public class JXPageControlScale: JXPageControlBase {
     
     override func setBase() {
         super.setBase()
-        indicatorSize = CGSize(width: 20, height: 20)
-        isInactiveHollow = true
-    }
-    
-    // MARK: - -------------------------- JXPageControlType --------------------------
-
-    /// Please use the property "indicatorSize"
-    override public var activeSize: CGSize {
-        get { return CGSize(width: actualIndicatorSize.width,
-                            height: actualIndicatorSize.height) }
-        set {}
-    }
-    
-    /// Please use the property "indicatorSize"
-    override public var inactiveSize: CGSize {
-        get { return CGSize(width: actualIndicatorSize.width,
-                            height: actualIndicatorSize.height) }
-        set {}
-    }
-    
-    var actualIndicatorSize: CGSize = CGSize(width: 10, height: 10)
-    override public var indicatorSize: CGSize {
-        get { return actualIndicatorSize }
-        set {
-            actualIndicatorSize = CGSize(
-                width: newValue.width > minIndicatorSize.width ?
-                    newValue.width : minIndicatorSize.width ,
-                height: newValue.height > minIndicatorSize.height ?
-                    newValue.height : minIndicatorSize.height )
-            reloadLayout()
-            updateProgress(CGFloat(currentIndex))
-        }
+        inactiveSize = CGSize(width: 15,
+                              height: 15)
+        activeSize = CGSize(width: 20,
+                            height: 20)
     }
     
     // MARK: - -------------------------- Custom property list --------------------------
-
+    
     /// When isAnimation is false, the animation time is shorter;
     /// when isAnimation is true, the animation time is longer.
     @IBInspectable public var isAnimation: Bool = true
+
+    private var inactiveOriginFrame: [CGRect] = []
     
     // MARK: - -------------------------- Update tht data --------------------------
-
     
     override func updateProgress(_ progress: CGFloat) {
         guard progress >= 0 ,
             progress <= CGFloat(numberOfPages - 1)
             else { return }
 
+
+
+
         let leftIndex = Int(floor(progress))
         let rightIndex = leftIndex + 1 > numberOfPages - 1 ? leftIndex : leftIndex + 1
-        
+
         if leftIndex == rightIndex {
             for index in 0 ..< numberOfPages {
-                let layer = inactiveLayer[index]
                 if index != leftIndex{
+                    let layer = inactiveLayer[index]
+                    layer.frame = inactiveOriginFrame[index]
                     hollowLayout(layer: layer, isActive: false)
-                    
                 }else {
+                    let layer = inactiveLayer[index]
+                    let frame = inactiveOriginFrame[index]
+                    layer.frame = CGRect(x: frame.origin.x - (activeSize.width - inactiveSize.width) * 0.5,
+                                         y: (maxIndicatorSize.height - activeSize.height) * 0.5,
+                                         width: activeSize.width,
+                                         height: activeSize.height)
                     hollowLayout(layer: layer, isActive: true)
                 }
             }
         }else {
-            
             let leftLayer = inactiveLayer[leftIndex]
             let rightLayer = inactiveLayer[rightIndex]
+
             let rightScare = progress - floor(progress)
             let leftScare = 1 - rightScare
+
 
             CATransaction.begin()
             CATransaction.setDisableActions(!isAnimation)
             CATransaction.setAnimationDuration(0.2)
             
             let tempInactiveColor = isInactiveHollow ? UIColor.clear : inactiveColor
+            let tempActiveColor = (isInactiveHollow && isActiveHollow) ? UIColor.clear : activeColor
+            
             leftLayer.backgroundColor = UIColor.transform(originColor: tempInactiveColor,
-                                                          targetColor: activeColor,
+                                                          targetColor: tempActiveColor,
                                                           proportion: leftScare).cgColor
             rightLayer.backgroundColor = UIColor.transform(originColor: tempInactiveColor,
-                                                           targetColor: activeColor,
+                                                           targetColor: tempActiveColor,
                                                            proportion: rightScare).cgColor
+            if leftScare == 1 {
+                hollowLayout(layer: leftLayer, isActive: true)
+            }else if rightScare == 1 {
+                hollowLayout(layer: rightLayer, isActive: true)
+            }
+            
+            
+
+            let activeWidth = activeSize.width > kMinItemWidth ? activeSize.width : kMinItemWidth
+            let activeHeight = activeSize.height > kMinItemHeight ? activeSize.height : kMinItemHeight
+            let inactiveWidth = inactiveSize.width > kMinItemWidth ? inactiveSize.width : kMinItemWidth
+            let inactiveHeight = inactiveSize.height > kMinItemHeight ? inactiveSize.height : kMinItemHeight
+            
+            let marginWidth = activeWidth - inactiveWidth
+            let marginHeight = activeHeight - inactiveHeight
+
+            let leftWidth = inactiveWidth + marginWidth * leftScare
+            let rightWidth = inactiveWidth + marginWidth * rightScare
+            let leftHeight = inactiveHeight + marginHeight * leftScare
+            let rightHeight = inactiveHeight + marginHeight * rightScare
+
+
+            let leftX = (maxIndicatorSize.width - leftWidth) * 0.5 + (maxIndicatorSize.width + columnSpacing) * CGFloat(leftIndex)
+            let rightX = (maxIndicatorSize.width - rightWidth) * 0.5 + (maxIndicatorSize.width + columnSpacing) * CGFloat(rightIndex)
+
+            leftLayer.frame = CGRect(x: leftX,
+                                     y: (maxIndicatorSize.width - leftHeight) * 0.5,
+                                     width: leftWidth,
+                                     height: leftHeight)
+
+
+
+            rightLayer.frame = CGRect(x: rightX,
+                                      y: (maxIndicatorSize.width - rightHeight) * 0.5,
+                                      width: rightWidth,
+                                      height: rightHeight)
+
+
+            if leftWidth > leftHeight {
+                leftLayer.cornerRadius = leftHeight*0.5
+            }else {
+                leftLayer.cornerRadius = leftWidth*0.5
+            }
+            if rightWidth > rightHeight {
+                rightLayer.cornerRadius = rightHeight*0.5
+            }else {
+                rightLayer.cornerRadius = rightWidth*0.5
+            }
+
+
+
             for index in 0 ..< numberOfPages {
                 if index != leftIndex,
                     index != rightIndex {
                     let layer = inactiveLayer[index]
+                    layer.frame = inactiveOriginFrame[index]
                     hollowLayout(layer: layer, isActive: false)
                 }
             }
@@ -108,20 +145,27 @@ import UIKit
             pageIndex <= numberOfPages - 1,
             pageIndex != currentIndex
             else { return }
-        
+
         for index in 0 ..< numberOfPages {
             if index == currentIndex {
                 CATransaction.begin()
                 CATransaction.setDisableActions(!isAnimation)
                 CATransaction.setAnimationDuration(0.7)
                 let layer = inactiveLayer[index]
+                layer.frame = inactiveOriginFrame[index]
                 hollowLayout(layer: layer, isActive: false)
                 CATransaction.commit()
             }else if index == pageIndex {
                 let layer = inactiveLayer[index]
+                let frame = inactiveOriginFrame[index]
+                
                 CATransaction.begin()
                 CATransaction.setDisableActions(!isAnimation)
                 CATransaction.setAnimationDuration(0.7)
+                layer.frame = CGRect(x: frame.origin.x - (self.activeSize.width - self.inactiveSize.width) * 0.5,
+                                     y: (self.maxIndicatorSize.width - self.activeSize.height) * 0.5,
+                                     width: self.activeSize.width,
+                                     height: self.activeSize.height)
                 hollowLayout(layer: layer, isActive: true)
                 CATransaction.commit()
             }
@@ -138,22 +182,28 @@ import UIKit
     }
     
     // MARK: - -------------------------- Layout --------------------------
-
     override func layoutInactiveIndicators() {
-        var layerFrame = CGRect(x: 0,
-                                y: 0,
-                                width: actualIndicatorSize.width ,
-                                height: actualIndicatorSize.height)
+        inactiveOriginFrame = []
+        let x = (maxIndicatorSize.width - inactiveSize.width) * 0.5
+        let y = (maxIndicatorSize.height - inactiveSize.height) * 0.5
+        let inactiveWidth = inactiveSize.width > kMinItemWidth ? inactiveSize.width : kMinItemWidth
+        let inactiveHeight = inactiveSize.height > kMinItemHeight ? inactiveSize.height : kMinItemHeight
+        var layerFrame = CGRect(x: x,
+                                y: y,
+                                width: inactiveWidth ,
+                                height: inactiveHeight)
         inactiveLayer.forEach() { layer in
-            layer.cornerRadius = actualIndicatorSize.height * 0.5
+            layer.cornerRadius = inactiveSize.height * 0.5
             layer.frame = layerFrame
-            layerFrame.origin.x +=  actualIndicatorSize.width + columnSpacing
+            inactiveOriginFrame.append(layerFrame)
+            print(layerFrame)
+            layerFrame.origin.x +=  maxIndicatorSize.width + columnSpacing
         }
         hollowLayout()
     }
 }
 
-extension JXPageControlChameleon {
+extension JXPageControlScale {
     
     private func hollowLayout() {
         if isInactiveHollow {
@@ -197,5 +247,13 @@ extension JXPageControlChameleon {
                 layer.backgroundColor = inactiveColor.cgColor
             }
         }
+        
+        /// Set cornerRadius
+        if layer.frame.width > layer.frame.height {
+            layer.cornerRadius = layer.frame.height*0.5
+        }else {
+            layer.cornerRadius = layer.frame.width*0.5
+        }
     }
+    
 }
