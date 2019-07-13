@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JXPageControl
 
 class JumpVC: UIViewController {
     

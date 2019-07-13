@@ -12,16 +12,16 @@ import UIKit
     
     override func setBase() {
         super.setBase()
-        inactiveSize = CGSize(width: 15,
-                              height: 15)
-        activeSize = CGSize(width: 20,
-                            height: 20)
+        activeSize = CGSize(width: 15,
+                            height: 15)
     }
     
     // MARK: - -------------------------- Custom property list --------------------------
     
     /// When isAnimation is false, the animation time is shorter;
-    /// when isAnimation is true, the animation time is longer.
+    /// when isAnimation is true, the animation time is longer;
+    /// IsAnimation only applies "set currentPage",
+    /// while "set progress" does not work
     @IBInspectable public var isAnimation: Bool = true
 
     private var inactiveOriginFrame: [CGRect] = []
@@ -63,9 +63,7 @@ import UIKit
             let leftScare = 1 - rightScare
 
 
-            CATransaction.begin()
-            CATransaction.setDisableActions(!isAnimation)
-            CATransaction.setAnimationDuration(0.2)
+            CATransaction.setDisableActions(true)
             
             let tempInactiveColor = isInactiveHollow ? UIColor.clear : inactiveColor
             let tempActiveColor = (isInactiveHollow && isActiveHollow) ? UIColor.clear : activeColor
@@ -76,14 +74,7 @@ import UIKit
             rightLayer.backgroundColor = UIColor.transform(originColor: tempInactiveColor,
                                                            targetColor: tempActiveColor,
                                                            proportion: rightScare).cgColor
-            if leftScare == 1 {
-                hollowLayout(layer: leftLayer, isActive: true)
-            }else if rightScare == 1 {
-                hollowLayout(layer: rightLayer, isActive: true)
-            }
-            
-            
-
+  
             let activeWidth = activeSize.width > kMinItemWidth ? activeSize.width : kMinItemWidth
             let activeHeight = activeSize.height > kMinItemHeight ? activeSize.height : kMinItemHeight
             let inactiveWidth = inactiveSize.width > kMinItemWidth ? inactiveSize.width : kMinItemWidth
@@ -102,14 +93,14 @@ import UIKit
             let rightX = (maxIndicatorSize.width - rightWidth) * 0.5 + (maxIndicatorSize.width + columnSpacing) * CGFloat(rightIndex)
 
             leftLayer.frame = CGRect(x: leftX,
-                                     y: (maxIndicatorSize.width - leftHeight) * 0.5,
+                                     y: (maxIndicatorSize.height - leftHeight) * 0.5,
                                      width: leftWidth,
                                      height: leftHeight)
 
 
 
             rightLayer.frame = CGRect(x: rightX,
-                                      y: (maxIndicatorSize.width - rightHeight) * 0.5,
+                                      y: (maxIndicatorSize.height - rightHeight) * 0.5,
                                       width: rightWidth,
                                       height: rightHeight)
 
@@ -146,11 +137,12 @@ import UIKit
             pageIndex != currentIndex
             else { return }
 
+        let duration: CFTimeInterval = isAnimation ? 0.6 : 0.3
+        
         for index in 0 ..< numberOfPages {
             if index == currentIndex {
                 CATransaction.begin()
-                CATransaction.setDisableActions(!isAnimation)
-                CATransaction.setAnimationDuration(0.7)
+                CATransaction.setAnimationDuration(duration)
                 let layer = inactiveLayer[index]
                 layer.frame = inactiveOriginFrame[index]
                 hollowLayout(layer: layer, isActive: false)
@@ -160,10 +152,9 @@ import UIKit
                 let frame = inactiveOriginFrame[index]
                 
                 CATransaction.begin()
-                CATransaction.setDisableActions(!isAnimation)
-                CATransaction.setAnimationDuration(0.7)
+                CATransaction.setAnimationDuration(duration)
                 layer.frame = CGRect(x: frame.origin.x - (self.activeSize.width - self.inactiveSize.width) * 0.5,
-                                     y: (self.maxIndicatorSize.width - self.activeSize.height) * 0.5,
+                                     y: (self.maxIndicatorSize.height - self.activeSize.height) * 0.5,
                                      width: self.activeSize.width,
                                      height: self.activeSize.height)
                 hollowLayout(layer: layer, isActive: true)
@@ -193,10 +184,8 @@ import UIKit
                                 width: inactiveWidth ,
                                 height: inactiveHeight)
         inactiveLayer.forEach() { layer in
-            layer.cornerRadius = inactiveSize.height * 0.5
             layer.frame = layerFrame
             inactiveOriginFrame.append(layerFrame)
-            print(layerFrame)
             layerFrame.origin.x +=  maxIndicatorSize.width + columnSpacing
         }
         hollowLayout()
@@ -214,6 +203,7 @@ extension JXPageControlScale {
                     layer.backgroundColor = UIColor.clear.cgColor
                     layer.borderColor = activeColor.cgColor
                 }
+                layer.borderColor = activeColor.cgColor
                 layer.borderWidth = 1
             }
         }

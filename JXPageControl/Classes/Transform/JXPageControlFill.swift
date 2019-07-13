@@ -9,13 +9,8 @@
 import UIKit
 import CoreGraphics
 
-//private let kMinContentSize = CGSize(width: 2, height: 2)
-
 @IBDesignable public class JXPageControlFill: JXPageControlBase {
 
-    override func setBase() {
-        super.setBase()
-    }
     
     /// Please use the property "diameter"
     override public var activeSize: CGSize {
@@ -193,7 +188,7 @@ extension JXPageControlFill {
                       maxW: CGFloat?) {
         
         CATransaction.begin()
-        CATransaction.setAnimationDuration(0.02)
+        CATransaction.setAnimationDuration(0.03)
         CATransaction.setCompletionBlock { [weak self] in
             guard let strongSelf = self else { return }
             

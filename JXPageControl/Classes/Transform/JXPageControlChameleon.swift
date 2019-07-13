@@ -10,11 +10,6 @@ import UIKit
 
 @IBDesignable public class JXPageControlChameleon: JXPageControlBase {
     
-    override func setBase() {
-        super.setBase()
-        indicatorSize = CGSize(width: 20, height: 20)
-        isInactiveHollow = true
-    }
     
     // MARK: - -------------------------- JXPageControlType --------------------------
 
@@ -145,8 +140,12 @@ import UIKit
                                 width: actualIndicatorSize.width ,
                                 height: actualIndicatorSize.height)
         inactiveLayer.forEach() { layer in
-            layer.cornerRadius = actualIndicatorSize.height * 0.5
             layer.frame = layerFrame
+            if actualIndicatorSize.width > actualIndicatorSize.height {
+                layer.cornerRadius = actualIndicatorSize.height*0.5
+            }else {
+                layer.cornerRadius = actualIndicatorSize.width*0.5
+            }
             layerFrame.origin.x +=  actualIndicatorSize.width + columnSpacing
         }
         hollowLayout()
@@ -164,6 +163,7 @@ extension JXPageControlChameleon {
                     layer.backgroundColor = UIColor.clear.cgColor
                     layer.borderColor = activeColor.cgColor
                 }
+                layer.borderColor = activeColor.cgColor
                 layer.borderWidth = 1
             }
         }

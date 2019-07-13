@@ -10,11 +10,6 @@ import UIKit
 
 
 @IBDesignable public class JXPageControlExchange: JXPageControlBase {
-    
-    override func setBase() {
-        super.setBase()
-        indicatorSize = CGSize(width: 20, height: 20)
-    }
 
     // MARK: - -------------------------- Custom property list --------------------------
 
@@ -175,7 +170,6 @@ import UIKit
         
         activeLayer?.removeFromSuperlayer()
         activeLayer = CALayer()
-        activeLayer?.cornerRadius = activeSize.height * 0.5
         contentView.layer.addSublayer(activeLayer!)
     }
     
@@ -183,13 +177,21 @@ import UIKit
     
     
     override func layoutActiveIndicator() {
-        let x = (maxIndicatorSize.width - activeSize.width) * 0.5
-        let y = (maxIndicatorSize.height - activeSize.height) * 0.5
-        activeLayer?.frame = CGRect(x: x,
-                                    y: y,
-                                    width: activeSize.width,
-                                    height: activeSize.height)
-        activeHollowLayout()
+        if let activeLayer = activeLayer  {
+            let x = (maxIndicatorSize.width - activeSize.width) * 0.5
+            let y = (maxIndicatorSize.height - activeSize.height) * 0.5
+            activeLayer.frame = CGRect(x: x,
+                                        y: y,
+                                        width: activeSize.width,
+                                        height: activeSize.height)
+            if activeLayer.frame.width > activeLayer.frame.height {
+                activeLayer.cornerRadius = activeLayer.frame.height*0.5
+            }else {
+                activeLayer.cornerRadius = activeLayer.frame.width*0.5
+            }
+            activeHollowLayout()
+        }
+
     }
     
     override func layoutInactiveIndicators() {
@@ -201,9 +203,13 @@ import UIKit
                                 width: inactiveSize.width,
                                 height: inactiveSize.height)
         inactiveLayer.forEach() { layer in
-            layer.cornerRadius = inactiveSize.height * 0.5
             layer.frame = layerFrame
             inactiveOriginFrame.append(layerFrame)
+            if layer.frame.width > layer.frame.height {
+                layer.cornerRadius = layer.frame.height*0.5
+            }else {
+                layer.cornerRadius = layer.frame.width*0.5
+            }
             layerFrame.origin.x +=  maxIndicatorSize.width + columnSpacing
         }
         inactiveHollowLayout()

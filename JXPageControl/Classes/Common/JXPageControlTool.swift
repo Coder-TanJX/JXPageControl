@@ -22,13 +22,18 @@ extension UIColor {
         }else {
             
             if let components = color.cgColor.components {
-                r = components[0]
-                g = components[1]
-                if components.count >= 3 {
+                if components.count == 2 {
+                    r = components[0]
+                    g = components[0]
+                    b = components[0]
+                    a = components[1]
+                }else if components.count == 4 {
+                    r = components[0]
+                    g = components[1]
                     b = components[2]
-                }
-                if components.count == 4 {
                     a = components[3]
+                }else {
+                    print("获取颜色RGB失败")
                 }
             }
         }
@@ -61,7 +66,6 @@ extension UIColor {
         let originArr = self.rgbArray(color: originColor)
         let differenceArr = self.difference(originColor: originColor,
                                         targetColor: targetColor)
-
         return UIColor(red: originArr[0] + proportion * differenceArr[0] ,
                        green: originArr[1] + proportion * differenceArr[1],
                        blue: originArr[2] + proportion * differenceArr[2],

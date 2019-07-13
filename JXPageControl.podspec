@@ -32,11 +32,22 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'JXPageControl/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'JXPageControl' => ['JXPageControl/Assets/*.png']
-  # }
+  s.subspec 'Common' do |ss|
+      ss.source_files = 'JXPageControl/Classes/Common/**/*'
+      ss.public_header_files = 'JXPageControl/Classes/Common/**/*.h'
+  end
+  
+  s.subspec 'Jump' do |ss|
+      ss.source_files = 'JXPageControl/Classes/Jump/**/*'
+      ss.public_header_files = 'JXPageControl/Classes/Jump/**/*.h'
+      ss.dependency 'JXPageControl/Common'
+  end
+  
+  s.subspec 'Transform' do |ss|
+      ss.source_files = 'JXPageControl/Classes/Transform/**/*'
+      ss.public_header_files = 'JXPageControl/Classes/Transform/**/*.h'
+      ss.dependency 'JXPageControl/Common'
+  end
+  
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
