@@ -39,16 +39,21 @@ end
 
 ### The UI effect 
 
-:-:
-JXPageControlChameleon ---------  JXPageControlFill   
-<img src="Gifs/chamelon.gif" width="220" height="140"> <img src="Gifs/fill.gif" width="220" height="140">
-
-
+<img src="Gifs/chamelon.gif" width="220" height="140"> --------- JXPageControlChameleon
+<img src="Gifs/fill.gif" width="220" height="140"> ---------  JXPageControlFill
+<img src="Gifs/exchange1.gif" width="220" height="140"> ---------  JXPageControlExchange
+<img src="Gifs/exchange2.gif" width="220" height="140"> ---------  JXPageControlExchange
+<img src="Gifs/scare1.gif" width="220" height="100"> ---------  JXPageControlScale
+<img src="Gifs/scare2.gif" width="220" height="100"> ---------  JXPageControlScale
+<img src="Gifs/scare3.gif" width="220" height="100"> ---------  JXPageControlScale
+<img src="Gifs/jump.gif" width="220" height="190"> ---------  JXPageControlJump
+<img src="Gifs/jump.gif" width="220" height="190"> ---------  JXPageControlJump
+<img src="Gifs/jump.gif" width="220" height="190"> ---------  JXPageControlJump
 
 
 JXPageControlChameleon          |   JXPageControlExchange     |        JXPageControlFill 
 :-: | :-: | :-:   
-<img src="Images/chamelon.gif" width="144" height="88"> | <img src="Images/exchange.gif" width="260" height="124"> | <img src="Images/fill.gif" width="128" height="104">
+<img src="Images/chamelon.gif" width="144" height="88"> |  | <img src="Images/fill.gif" width="128" height="104">
 
 
 &nbsp;
