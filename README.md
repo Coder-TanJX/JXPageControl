@@ -52,6 +52,25 @@ JXPageControlJump | JXPageControlScale
 :-: | :-: 
 <img src="Images/jump.gif" width="128" height="328"> | <img src="Images/scare.gif" width="128" height="300">
 
+
+
+<table><tbody>
+<tr>
+<th>方法说明</th><th>颜色名称</th><th>颜色</th>
+</tr>
+<tr>
+<td><font color="Hotpink">此处实现方法利用 CSDN-markdown 内嵌 html 语言的优势</font></td><td><font color="Hotpink">Hotpink</font></td><td bgcolor="Hotpink">rgb(240, 248, 255)</td>
+</tr>
+<tr>
+<td><font color="Pink">借助 table, tr, td 等表格标签的 bgcolor 属性实现背景色设置</font></td><td><font color="pink">AntiqueWhite</font></td><td bgcolor="Pink">rgb(255, 192, 203)</td>
+</tr>
+</table>
+--------------------- 
+作者：ThitherShore 
+来源：CSDN 
+原文：https://blog.csdn.net/thither_shore/article/details/52328313 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+
 ---
 
 ### Frame set 
