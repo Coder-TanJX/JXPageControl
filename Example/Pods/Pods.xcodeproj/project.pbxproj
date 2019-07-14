@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25A21E5E40FEEEB34C94C1C80E3FE246 /* JXPageControlJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF07E486B54E2078D6DCCF3B9A5852A /* JXPageControlJump.swift */; };
-		2C3B88A2B8D4C95B2525E17A867BD5DF /* JXPageControlEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5F15B9754109F3FA5AD71FF763626 /* JXPageControlEllipse.swift */; };
-		2D46E647BB56818BDB4E788FF0FFF2A7 /* JXPageControlExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B11E037AD73A75CADB8457A9D9ACD8 /* JXPageControlExchange.swift */; };
+		13E9BE9CF5D405C33B87CBD9741E47BC /* JXPageControlFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B7EF03A674413E76B380264648EA4B /* JXPageControlFill.swift */; };
+		2A710515CC2249EE3B10311DA5C7887F /* JXPageControlExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC9E499720109F6A122A04D7E20228 /* JXPageControlExchange.swift */; };
+		37954452FD6439E6DB352EAA3D1F99C8 /* JXPageControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0DF01F7431F4786CC1C7BF3AD22BF /* JXPageControl-dummy.m */; };
 		4065A8901F15D88AAB3D9E88D8F8D94F /* Pods-JXPageControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89799B21FBFF0E01F7731C5B45D7E601 /* Pods-JXPageControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4632EEB428300DC1B7FC59A2E7017166 /* JXPageControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 506E22F366731C2A4B81F49CD6120810 /* JXPageControl-dummy.m */; };
-		4C6C053CBC4098FFA31C9FE6994B4666 /* JXPageControlChameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171184ABB886FB6EAFC6FA905963B41D /* JXPageControlChameleon.swift */; };
-		5462123547A88858363E9D4D4D29E179 /* JXPageControlBoldLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A65DCB9B26ED9C7D1E207FF7F2170 /* JXPageControlBoldLine.swift */; };
+		58BA38C6C2C2A89473121DAAC1A82816 /* JXPageControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A02B1A903C6C43BB1BE5888BBE48AD /* JXPageControlType.swift */; };
 		698606E36B4CB83B70CDBF2B14F75F93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		6A47A5EBB8C9A5EDB8E4954129C5AD13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		73722EC9F5EB6D9250D1A0CEBDBF70D4 /* JXPageControlLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B4FFB678D2FA3B65AAFB29EF90261E /* JXPageControlLine.swift */; };
-		77575F0A5F84F19A39DAABBD9FA2F426 /* JXPageControlType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B3151D6DA33C0FD8186C3129F98E2 /* JXPageControlType.swift */; };
-		7D0C1E4068AAC8004E118C4631B1217E /* JXPageControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6862C33AC00195194BD5FB08417F850D /* JXPageControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C5AE6BB198BCBB3EEF30138BCC2AE7E /* JXPageControlScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAE017E3D151FA21D0900689E92B338 /* JXPageControlScale.swift */; };
-		A0970FD1C04D36610FC45FF765FAB8AC /* JXPageControlTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE519223668496ABCF2F7682F0CB0A46 /* JXPageControlTool.swift */; };
-		A624F4BBA3A81A8ED67E03AC7522A26C /* JXPageControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942A4BED7ABD2D723166BE333E7D04A /* JXPageControlBase.swift */; };
+		6B6AB6A5D303A372E60E1F1F6407C1F2 /* JXPageControlEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D531A05927E6AAF9F468622F774F1B /* JXPageControlEllipse.swift */; };
+		729A20288F278246EB5AC7FD634719F1 /* JXPageControlBoldLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D528B352BD6284B4A714F8EF620E42BC /* JXPageControlBoldLine.swift */; };
+		7D0C1E4068AAC8004E118C4631B1217E /* JXPageControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDE021A055C4F87DDBAB035927577F4 /* JXPageControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3ECA8427B508D46B32F5D432056C66A /* JXPageControlScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA4576830559FFABC491F02C1EC028 /* JXPageControlScale.swift */; };
+		AAE5BE5C107C5F6F71DF21CCA4CA7BD1 /* JXPageControlChameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D47670EB4DB44F55C5EF22CB6FB4446 /* JXPageControlChameleon.swift */; };
 		ACBE9C966E9603E8FA3695C26C992911 /* Pods-JXPageControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA77E5E8EAAC067A6B0F5E9E4DF739 /* Pods-JXPageControl_Example-dummy.m */; };
-		CF57A3994C507FD0CE506D47903E9047 /* JXPageControlFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151C9DD20B3BD38A5DA890902A9A7BC /* JXPageControlFill.swift */; };
+		B1FD041CB7FF5828582DB419A79CD256 /* JXPageControlJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579A12092994104CB15E80FCA63EFB46 /* JXPageControlJump.swift */; };
+		D23A1A0131BB2E344B6A9BB49684C070 /* JXPageControlTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FAE696ADD386608E55ADF8989E802E /* JXPageControlTool.swift */; };
+		D31AEC5768A9E007F31FC0452CBC84B6 /* JXPageControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4730A7F7F96687AF1A0D022F307661C7 /* JXPageControlBase.swift */; };
+		EF6123669E69639EC6E4E64118897959 /* JXPageControlLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04180408197080588EB95A3B64720BAB /* JXPageControlLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,37 +38,37 @@
 
 /* Begin PBXFileReference section */
 		039D1A6635669D130C0C91105CA516E8 /* Pods-JXPageControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JXPageControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		04180408197080588EB95A3B64720BAB /* JXPageControlLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlLine.swift; path = JXPageControl/Classes/Jump/JXPageControlLine.swift; sourceTree = "<group>"; };
 		0FA0B517308DFECFD621E39311692706 /* Pods_JXPageControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JXPageControl_Example.framework; path = "Pods-JXPageControl_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FF07E486B54E2078D6DCCF3B9A5852A /* JXPageControlJump.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlJump.swift; sourceTree = "<group>"; };
-		171184ABB886FB6EAFC6FA905963B41D /* JXPageControlChameleon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlChameleon.swift; sourceTree = "<group>"; };
 		1D4DE65261F7A6311EF1E742E96956F0 /* Pods-JXPageControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXPageControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		241B3151D6DA33C0FD8186C3129F98E2 /* JXPageControlType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlType.swift; sourceTree = "<group>"; };
+		24BC9E499720109F6A122A04D7E20228 /* JXPageControlExchange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlExchange.swift; path = JXPageControl/Classes/Transform/JXPageControlExchange.swift; sourceTree = "<group>"; };
+		27FB68BE271459AD4C24807793983846 /* JXPageControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXPageControl.modulemap; sourceTree = "<group>"; };
 		32FD2DE5B32E6D832A1C30F5075B191A /* Pods-JXPageControl_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JXPageControl_Example-Info.plist"; sourceTree = "<group>"; };
-		3942A4BED7ABD2D723166BE333E7D04A /* JXPageControlBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlBase.swift; sourceTree = "<group>"; };
-		3963091C5F791D0FDEEEA0AD99D22703 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		3A69644BEAABF27BD6D34349A4656369 /* JXPageControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXPageControl.xcconfig; sourceTree = "<group>"; };
-		506E22F366731C2A4B81F49CD6120810 /* JXPageControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXPageControl-dummy.m"; sourceTree = "<group>"; };
+		40A581A44018FAC2D7174CC9E4482AE6 /* JXPageControl.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JXPageControl.xcconfig; sourceTree = "<group>"; };
+		4730A7F7F96687AF1A0D022F307661C7 /* JXPageControlBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlBase.swift; path = JXPageControl/Classes/Common/JXPageControlBase.swift; sourceTree = "<group>"; };
+		4D47670EB4DB44F55C5EF22CB6FB4446 /* JXPageControlChameleon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlChameleon.swift; path = JXPageControl/Classes/Transform/JXPageControlChameleon.swift; sourceTree = "<group>"; };
 		575EB8184AFCA63CEB1334BE5A127B40 /* Pods-JXPageControl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JXPageControl_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6862C33AC00195194BD5FB08417F850D /* JXPageControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXPageControl-umbrella.h"; sourceTree = "<group>"; };
-		6DA3C38672E958A6E8C68DF0198184A7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		704B44D8BE9BBEC7E7A95D4653CE7234 /* JXPageControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JXPageControl.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7151C9DD20B3BD38A5DA890902A9A7BC /* JXPageControlFill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlFill.swift; sourceTree = "<group>"; };
+		579A12092994104CB15E80FCA63EFB46 /* JXPageControlJump.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlJump.swift; path = JXPageControl/Classes/Jump/JXPageControlJump.swift; sourceTree = "<group>"; };
+		7179E9CC0C4875DCACAF3808ED76AD9E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		77A02B1A903C6C43BB1BE5888BBE48AD /* JXPageControlType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlType.swift; path = JXPageControl/Classes/Common/JXPageControlType.swift; sourceTree = "<group>"; };
+		7AC0DF01F7431F4786CC1C7BF3AD22BF /* JXPageControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JXPageControl-dummy.m"; sourceTree = "<group>"; };
 		7CBA77E5E8EAAC067A6B0F5E9E4DF739 /* Pods-JXPageControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JXPageControl_Example-dummy.m"; sourceTree = "<group>"; };
 		89799B21FBFF0E01F7731C5B45D7E601 /* Pods-JXPageControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JXPageControl_Example-umbrella.h"; sourceTree = "<group>"; };
-		89B11E037AD73A75CADB8457A9D9ACD8 /* JXPageControlExchange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlExchange.swift; sourceTree = "<group>"; };
-		89F5F15B9754109F3FA5AD71FF763626 /* JXPageControlEllipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlEllipse.swift; sourceTree = "<group>"; };
-		934A65DCB9B26ED9C7D1E207FF7F2170 /* JXPageControlBoldLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlBoldLine.swift; sourceTree = "<group>"; };
-		98E5370EF0C43E626C67E97DC64C0DFE /* JXPageControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXPageControl-prefix.pch"; sourceTree = "<group>"; };
+		96D531A05927E6AAF9F468622F774F1B /* JXPageControlEllipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlEllipse.swift; path = JXPageControl/Classes/Jump/JXPageControlEllipse.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2D6D127386E85BD843B5057FFA8F5DE /* JXPageControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JXPageControl-Info.plist"; sourceTree = "<group>"; };
-		B35D4F56648E7FC3499A7AAEF6C1DB03 /* JXPageControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JXPageControl.modulemap; sourceTree = "<group>"; };
+		9DDE021A055C4F87DDBAB035927577F4 /* JXPageControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXPageControl-umbrella.h"; sourceTree = "<group>"; };
+		9FBA4576830559FFABC491F02C1EC028 /* JXPageControlScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlScale.swift; path = JXPageControl/Classes/Transform/JXPageControlScale.swift; sourceTree = "<group>"; };
+		A1E316767A8D5343F1CF03FFBB7F86F0 /* JXPageControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JXPageControl-prefix.pch"; sourceTree = "<group>"; };
+		A8B7EF03A674413E76B380264648EA4B /* JXPageControlFill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlFill.swift; path = JXPageControl/Classes/Transform/JXPageControlFill.swift; sourceTree = "<group>"; };
 		BB6FE697B48965154FA66001A7694B6A /* Pods-JXPageControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JXPageControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB7A89F430590310D92146270182B421 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CCAE017E3D151FA21D0900689E92B338 /* JXPageControlScale.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlScale.swift; sourceTree = "<group>"; };
-		CE519223668496ABCF2F7682F0CB0A46 /* JXPageControlTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlTool.swift; sourceTree = "<group>"; };
+		D528B352BD6284B4A714F8EF620E42BC /* JXPageControlBoldLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlBoldLine.swift; path = JXPageControl/Classes/Jump/JXPageControlBoldLine.swift; sourceTree = "<group>"; };
 		DB9DB1240578F217D9B7A098A8B2A4B4 /* Pods-JXPageControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JXPageControl_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E4B4FFB678D2FA3B65AAFB29EF90261E /* JXPageControlLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JXPageControlLine.swift; sourceTree = "<group>"; };
+		E2FAE696ADD386608E55ADF8989E802E /* JXPageControlTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JXPageControlTool.swift; path = JXPageControl/Classes/Common/JXPageControlTool.swift; sourceTree = "<group>"; };
+		ED53437A67A5EEB1F366E2A55F0F8BDA /* JXPageControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JXPageControl-Info.plist"; sourceTree = "<group>"; };
 		F21A0D1265304BD2C36DEAD816538724 /* JXPageControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JXPageControl.framework; path = JXPageControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38288281DBF5FBD8E38FABCB3E2FC1D /* JXPageControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JXPageControl.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F97188DD25DE858BAF601DB910C02DFE /* Pods-JXPageControl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JXPageControl_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,37 +92,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05327F8E9042321F2D2145578289712D /* Common */ = {
+		14EB280A0C3C73CCC0F5B267E2174D61 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3942A4BED7ABD2D723166BE333E7D04A /* JXPageControlBase.swift */,
-				CE519223668496ABCF2F7682F0CB0A46 /* JXPageControlTool.swift */,
-				241B3151D6DA33C0FD8186C3129F98E2 /* JXPageControlType.swift */,
+				27FB68BE271459AD4C24807793983846 /* JXPageControl.modulemap */,
+				40A581A44018FAC2D7174CC9E4482AE6 /* JXPageControl.xcconfig */,
+				7AC0DF01F7431F4786CC1C7BF3AD22BF /* JXPageControl-dummy.m */,
+				ED53437A67A5EEB1F366E2A55F0F8BDA /* JXPageControl-Info.plist */,
+				A1E316767A8D5343F1CF03FFBB7F86F0 /* JXPageControl-prefix.pch */,
+				9DDE021A055C4F87DDBAB035927577F4 /* JXPageControl-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JXPageControl";
+			sourceTree = "<group>";
+		};
+		3BB9E926297EEAD7D615189D57091509 /* Jump */ = {
+			isa = PBXGroup;
+			children = (
+				D528B352BD6284B4A714F8EF620E42BC /* JXPageControlBoldLine.swift */,
+				96D531A05927E6AAF9F468622F774F1B /* JXPageControlEllipse.swift */,
+				579A12092994104CB15E80FCA63EFB46 /* JXPageControlJump.swift */,
+				04180408197080588EB95A3B64720BAB /* JXPageControlLine.swift */,
+			);
+			name = Jump;
+			sourceTree = "<group>";
+		};
+		5C410231D06753B3BA29A152843C6CB2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4730A7F7F96687AF1A0D022F307661C7 /* JXPageControlBase.swift */,
+				E2FAE696ADD386608E55ADF8989E802E /* JXPageControlTool.swift */,
+				77A02B1A903C6C43BB1BE5888BBE48AD /* JXPageControlType.swift */,
 			);
 			name = Common;
-			path = JXPageControl/Classes/Common;
 			sourceTree = "<group>";
 		};
-		16888195A5CC17331A2D5FC433A4788A /* Transform */ = {
+		6BC82CDA59EF35E6AC1EB21D80B99EE1 /* Transform */ = {
 			isa = PBXGroup;
 			children = (
-				171184ABB886FB6EAFC6FA905963B41D /* JXPageControlChameleon.swift */,
-				89B11E037AD73A75CADB8457A9D9ACD8 /* JXPageControlExchange.swift */,
-				7151C9DD20B3BD38A5DA890902A9A7BC /* JXPageControlFill.swift */,
-				CCAE017E3D151FA21D0900689E92B338 /* JXPageControlScale.swift */,
+				4D47670EB4DB44F55C5EF22CB6FB4446 /* JXPageControlChameleon.swift */,
+				24BC9E499720109F6A122A04D7E20228 /* JXPageControlExchange.swift */,
+				A8B7EF03A674413E76B380264648EA4B /* JXPageControlFill.swift */,
+				9FBA4576830559FFABC491F02C1EC028 /* JXPageControlScale.swift */,
 			);
 			name = Transform;
-			path = JXPageControl/Classes/Transform;
-			sourceTree = "<group>";
-		};
-		21A2FD5155B9152018F674EBBF881BF3 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				704B44D8BE9BBEC7E7A95D4653CE7234 /* JXPageControl.podspec */,
-				6DA3C38672E958A6E8C68DF0198184A7 /* LICENSE */,
-				3963091C5F791D0FDEEEA0AD99D22703 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
@@ -136,7 +149,7 @@
 		9EABB9A46EDE91CA4F3A1EDB43C42E40 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C106AE4421268ED96DFDFD3AFB044045 /* JXPageControl */,
+				F19660A684B51FE1111B75E56B807E9C /* JXPageControl */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -148,33 +161,6 @@
 				0FA0B517308DFECFD621E39311692706 /* Pods_JXPageControl_Example.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B959D2680B3FB123FEE761D1368F7072 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B35D4F56648E7FC3499A7AAEF6C1DB03 /* JXPageControl.modulemap */,
-				3A69644BEAABF27BD6D34349A4656369 /* JXPageControl.xcconfig */,
-				506E22F366731C2A4B81F49CD6120810 /* JXPageControl-dummy.m */,
-				A2D6D127386E85BD843B5057FFA8F5DE /* JXPageControl-Info.plist */,
-				98E5370EF0C43E626C67E97DC64C0DFE /* JXPageControl-prefix.pch */,
-				6862C33AC00195194BD5FB08417F850D /* JXPageControl-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JXPageControl";
-			sourceTree = "<group>";
-		};
-		C106AE4421268ED96DFDFD3AFB044045 /* JXPageControl */ = {
-			isa = PBXGroup;
-			children = (
-				05327F8E9042321F2D2145578289712D /* Common */,
-				D50E4E0CF59D073F65D973938889FC02 /* Jump */,
-				21A2FD5155B9152018F674EBBF881BF3 /* Pod */,
-				B959D2680B3FB123FEE761D1368F7072 /* Support Files */,
-				16888195A5CC17331A2D5FC433A4788A /* Transform */,
-			);
-			name = JXPageControl;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		C57AE0F4CF838646A5F0A63E0F66C752 /* Pods-JXPageControl_Example */ = {
@@ -221,16 +207,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D50E4E0CF59D073F65D973938889FC02 /* Jump */ = {
+		F19660A684B51FE1111B75E56B807E9C /* JXPageControl */ = {
 			isa = PBXGroup;
 			children = (
-				934A65DCB9B26ED9C7D1E207FF7F2170 /* JXPageControlBoldLine.swift */,
-				89F5F15B9754109F3FA5AD71FF763626 /* JXPageControlEllipse.swift */,
-				0FF07E486B54E2078D6DCCF3B9A5852A /* JXPageControlJump.swift */,
-				E4B4FFB678D2FA3B65AAFB29EF90261E /* JXPageControlLine.swift */,
+				5C410231D06753B3BA29A152843C6CB2 /* Common */,
+				3BB9E926297EEAD7D615189D57091509 /* Jump */,
+				F41364FBD5954139F86084617FA05FE7 /* Pod */,
+				14EB280A0C3C73CCC0F5B267E2174D61 /* Support Files */,
+				6BC82CDA59EF35E6AC1EB21D80B99EE1 /* Transform */,
 			);
-			name = Jump;
-			path = JXPageControl/Classes/Jump;
+			name = JXPageControl;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F41364FBD5954139F86084617FA05FE7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F38288281DBF5FBD8E38FABCB3E2FC1D /* JXPageControl.podspec */,
+				BB7A89F430590310D92146270182B421 /* LICENSE */,
+				7179E9CC0C4875DCACAF3808ED76AD9E /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +276,7 @@
 			buildConfigurationList = 16C22985B7865E7F59BA71183A4A0BCC /* Build configuration list for PBXNativeTarget "JXPageControl" */;
 			buildPhases = (
 				69EA82B13E8EC3347A2CC60D61217E34 /* Headers */,
-				A815E16BC44A9D2E09D157AFBA77D3FF /* Sources */,
+				39CF5DABA9F806D9C20F69465E8F2295 /* Sources */,
 				270620BC9D4B24371AF8F02F537E49D5 /* Frameworks */,
 				6ABC1A454B11099B45E828221927CC8A /* Resources */,
 			);
@@ -345,22 +342,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A815E16BC44A9D2E09D157AFBA77D3FF /* Sources */ = {
+		39CF5DABA9F806D9C20F69465E8F2295 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4632EEB428300DC1B7FC59A2E7017166 /* JXPageControl-dummy.m in Sources */,
-				A624F4BBA3A81A8ED67E03AC7522A26C /* JXPageControlBase.swift in Sources */,
-				5462123547A88858363E9D4D4D29E179 /* JXPageControlBoldLine.swift in Sources */,
-				4C6C053CBC4098FFA31C9FE6994B4666 /* JXPageControlChameleon.swift in Sources */,
-				2C3B88A2B8D4C95B2525E17A867BD5DF /* JXPageControlEllipse.swift in Sources */,
-				2D46E647BB56818BDB4E788FF0FFF2A7 /* JXPageControlExchange.swift in Sources */,
-				CF57A3994C507FD0CE506D47903E9047 /* JXPageControlFill.swift in Sources */,
-				25A21E5E40FEEEB34C94C1C80E3FE246 /* JXPageControlJump.swift in Sources */,
-				73722EC9F5EB6D9250D1A0CEBDBF70D4 /* JXPageControlLine.swift in Sources */,
-				9C5AE6BB198BCBB3EEF30138BCC2AE7E /* JXPageControlScale.swift in Sources */,
-				A0970FD1C04D36610FC45FF765FAB8AC /* JXPageControlTool.swift in Sources */,
-				77575F0A5F84F19A39DAABBD9FA2F426 /* JXPageControlType.swift in Sources */,
+				37954452FD6439E6DB352EAA3D1F99C8 /* JXPageControl-dummy.m in Sources */,
+				D31AEC5768A9E007F31FC0452CBC84B6 /* JXPageControlBase.swift in Sources */,
+				729A20288F278246EB5AC7FD634719F1 /* JXPageControlBoldLine.swift in Sources */,
+				AAE5BE5C107C5F6F71DF21CCA4CA7BD1 /* JXPageControlChameleon.swift in Sources */,
+				6B6AB6A5D303A372E60E1F1F6407C1F2 /* JXPageControlEllipse.swift in Sources */,
+				2A710515CC2249EE3B10311DA5C7887F /* JXPageControlExchange.swift in Sources */,
+				13E9BE9CF5D405C33B87CBD9741E47BC /* JXPageControlFill.swift in Sources */,
+				B1FD041CB7FF5828582DB419A79CD256 /* JXPageControlJump.swift in Sources */,
+				EF6123669E69639EC6E4E64118897959 /* JXPageControlLine.swift in Sources */,
+				A3ECA8427B508D46B32F5D432056C66A /* JXPageControlScale.swift in Sources */,
+				D23A1A0131BB2E344B6A9BB49684C070 /* JXPageControlTool.swift in Sources */,
+				58BA38C6C2C2A89473121DAAC1A82816 /* JXPageControlType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +375,7 @@
 /* Begin XCBuildConfiguration section */
 		16886FDCD5FD9FAE8E8D1F894C97716C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A69644BEAABF27BD6D34349A4656369 /* JXPageControl.xcconfig */;
+			baseConfigurationReference = 40A581A44018FAC2D7174CC9E4482AE6 /* JXPageControl.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -600,7 +597,7 @@
 		};
 		F8E0D0EDDF7693EDA709B685A5A24BAE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A69644BEAABF27BD6D34349A4656369 /* JXPageControl.xcconfig */;
+			baseConfigurationReference = 40A581A44018FAC2D7174CC9E4482AE6 /* JXPageControl.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
