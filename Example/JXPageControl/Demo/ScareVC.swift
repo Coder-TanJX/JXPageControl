@@ -26,6 +26,10 @@ class ScareVC: UIViewController {
         scrollView.delegate = self 
     }
     
+    deinit {
+        print("\(#function ) --> \(#file)")
+    }
+    
 }
 
 extension ScareVC: UIScrollViewDelegate {

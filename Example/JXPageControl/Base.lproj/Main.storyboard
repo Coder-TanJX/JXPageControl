@@ -12,7 +12,7 @@
         <!--入口-->
         <scene sceneID="Gz4-Mm-EaN">
             <objects>
-                <viewController id="TBW-LY-6Y1" customClass="MainVC" customModule="JXPageControl_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TBW-LY-6Y1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G8H-4X-g9I"/>
                         <viewControllerLayoutGuide type="bottom" id="hhp-Zf-Shs"/>
@@ -637,7 +637,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVj-Cj-y0z" userLabel="toCircle" customClass="JXPageControlScale" customModule="JXPageControl">
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="XVj-Cj-y0z" userLabel="toCircle" customClass="JXPageControlScale" customModule="JXPageControl">
                                 <rect key="frame" x="16" y="374" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">

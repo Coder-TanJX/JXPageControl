@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'JXPageControl'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of JXPageControl.'
+  s.summary          = 'Custom UIPageControl: supports multiple animations, layouts'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +17,13 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Custom UIPageControl: a most complete PageControl framework that supports multiple animations and layouts.'
 
-  s.homepage         = 'https://github.com/bboyXFX/JXPageControl'
+  s.homepage         = 'https://github.com/Code-TanJX'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'bboyXFX' => 'jaixiang.tan@net263.com' }
-  s.source           = { :git => 'https://github.com/bboyXFX/JXPageControl.git', :tag => s.version.to_s }
+  s.author           = { 'Code-TanJX' => 'Code_TanJX@163.com' }
+  s.source           = { :git => 'https://github.com/Code-TanJX/JXPageControl', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

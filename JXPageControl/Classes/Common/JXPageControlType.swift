@@ -10,15 +10,15 @@ import UIKit
  let kMinItemWidth: CGFloat = 2.0
  let kMinItemHeight: CGFloat = 2.0
 
-public class JXPageControlAlignment {
+public class JXPageControlAlignment: NSObject {
     
-    enum JXHorizonAlignment : Int {
+    public enum JXHorizonAlignment : Int {
         case left
         case center
         case right
     }
     
-    enum JXVerticalAlignment : Int {
+    public enum JXVerticalAlignment : Int {
         case top
         case center
         case bottom
@@ -27,7 +27,7 @@ public class JXPageControlAlignment {
     var horizon: JXHorizonAlignment
     var vertical: JXVerticalAlignment
     
-    init(_ horizon: JXHorizonAlignment,
+    public init(_ horizon: JXHorizonAlignment,
          _ vertical: JXVerticalAlignment) {
         self.horizon = horizon
         self.vertical = vertical

@@ -21,6 +21,10 @@ class FillVC: UIViewController {
         scrollView.delegate = self
     }
     
+    deinit {
+        print("\(#function ) --> \(#file)")
+    }
+    
 }
 
 extension FillVC: UIScrollViewDelegate {

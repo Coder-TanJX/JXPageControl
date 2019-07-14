@@ -26,6 +26,9 @@ class ExchangeVC: UIViewController {
         scrollView.delegate = self
     }
     
+    deinit {
+        print("\(#function ) --> \(#file)")
+    }
 }
 
 extension ExchangeVC: UIScrollViewDelegate {

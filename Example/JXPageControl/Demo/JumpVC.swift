@@ -33,6 +33,10 @@ class JumpVC: UIViewController {
 
         scrollView.delegate = self
     }
+    
+    deinit {
+        print("\(#function ) --> \(#file)")
+    }
 
 }
 

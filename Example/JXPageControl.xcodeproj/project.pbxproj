@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F2E424A22D826B3002604B9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E424922D826B3002604B9 /* MainVC.swift */; };
 		1F2E425222D828AC002604B9 /* JumpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E425122D828AC002604B9 /* JumpVC.swift */; };
 		1F2E425422D871CB002604B9 /* ScareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E425322D871CB002604B9 /* ScareVC.swift */; };
 		1F3A411822D9A04300797834 /* FillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A411722D9A04300797834 /* FillVC.swift */; };
@@ -33,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		1F244DE422CC592200D95502 /* JXPageControl_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JXPageControl_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		1F2E424922D826B3002604B9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		1F2E425122D828AC002604B9 /* JumpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpVC.swift; sourceTree = "<group>"; };
 		1F2E425322D871CB002604B9 /* ScareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScareVC.swift; sourceTree = "<group>"; };
 		1F3A411722D9A04300797834 /* FillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillVC.swift; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 		1F3A411D22D9AED800797834 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				1F2E424922D826B3002604B9 /* MainVC.swift */,
 				1F2E425122D828AC002604B9 /* JumpVC.swift */,
 				1F2E425322D871CB002604B9 /* ScareVC.swift */,
 				1F3A411722D9A04300797834 /* FillVC.swift */,
@@ -333,7 +330,6 @@
 				1F3A411C22D9A06B00797834 /* ChamelonVC.swift in Sources */,
 				1F2E425422D871CB002604B9 /* ScareVC.swift in Sources */,
 				1F3A411822D9A04300797834 /* FillVC.swift in Sources */,
-				1F2E424A22D826B3002604B9 /* MainVC.swift in Sources */,
 				1F3A411A22D9A05800797834 /* ExchangeVC.swift in Sources */,
 				1F2E425222D828AC002604B9 /* JumpVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
