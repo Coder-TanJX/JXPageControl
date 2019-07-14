@@ -41,37 +41,16 @@ end
 
 
 
-JXPageControlChameleon | JXPageControlExchange | JXPageControlFill 
-:-: | :-: | :-: 
+JXPageControlChameleon          |   JXPageControlExchange     |        JXPageControlFill 
+:-: | :-: | :-:   
 <img src="Images/chamelon.gif" width="144" height="88"> | <img src="Images/exchange.gif" width="260" height="124"> | <img src="Images/fill.gif" width="128" height="104">
 
-* JXPageControlChameleon
 
-<img src="Images/chamelon.gif" width="144" height="88">
----
+&nbsp;
 
-* JXPageControlExchange
-
-<img src="Images/exchange.gif" width="260" height="124">
-
----
-
-* JXPageControlFill
-
-<img src="Images/fill.gif" width="128" height="104">
-
----
-
-* JXPageControlJump
-
-<img src="Images/jump.gif" width="128" height="328">
-
----
-
-* JXPageControlScale
-
-<img src="Images/scare.gif" width="128" height="300">
-
+JXPageControlJump | JXPageControlScale
+:-: | :-: 
+<img src="Images/jump.gif" width="128" height="328"> | <img src="Images/scare.gif" width="128" height="300">
 
 ---
 
