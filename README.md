@@ -39,9 +39,9 @@ end
 
 ### The UI effect 
 
-JXPageControlChameleon - JXPageControlFill   
 :-:
-<img src="Gifs/chamelon.gif" width="220" height="140"> <img src="Gifs/fill.gif" width="128" height="104">
+JXPageControlChameleon ---------  JXPageControlFill   
+<img src="Gifs/chamelon.gif" width="220" height="140"> <img src="Gifs/fill.gif" width="220" height="140">
 
 
 
