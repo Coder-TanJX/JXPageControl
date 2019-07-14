@@ -87,11 +87,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8fq-2y-M5z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mS8-b8-hRp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M3S-5t-MeK">
-                                <rect key="frame" x="0.0" y="700" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xv-ic-7kU" userLabel="contentView">
                                         <rect key="frame" x="0.0" y="0.0" width="1500" height="100"/>
@@ -157,7 +157,7 @@
                                 </constraints>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;- 左右滑动 -&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynh-R9-0U4">
-                                <rect key="frame" x="16" y="654" width="343" height="26"/>
+                                <rect key="frame" x="16" y="521" width="343" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -166,224 +166,161 @@
                                 <rect key="frame" x="16" y="84" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="db0-lh-7bg"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="o43-Kw-33H"/>
-                                    <constraint firstAttribute="width" constant="343" id="ud2-FR-YCO"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TU-We-Oir" userLabel="NoFlexble" customClass="JXPageControlJump" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="134" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Q00-0j-7Lb"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="119" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexible" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOI-Fc-PUU" userLabel="NoAnimation" customClass="JXPageControlJump" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="184" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="AEQ-2g-gxP"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="154" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAnimation" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7O-9u-49E" userLabel="NoAnimationAndFlexble" customClass="JXPageControlJump" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="234" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="b5w-qn-yfr"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="189" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isFlexible" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isAnimation" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3A-fL-cc9" userLabel="inactiveHollow" customClass="JXPageControlJump" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="284" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Hhl-fT-jfO"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="224" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCO-md-3zl" userLabel="activeHollow" customClass="JXPageControlJump" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="334" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Tt6-3n-4IQ"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="259" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isActiveHollow" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1O-iw-u8e" userLabel="allHollow" customClass="JXPageControlJump" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="384" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="R2e-YB-avJ"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="294" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isActiveHollow" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvX-3L-ogN" userLabel="smallActive" customClass="JXPageControlJump" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="434" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="WPN-E4-QEa"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="329" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="16" height="16"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="20" height="20"/>
+                                        <size key="value" width="13" height="13"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpF-Ug-Nr2" userLabel="line" customClass="JXPageControlLine" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="484" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="h2E-aj-z3N"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="364" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCE-Y4-cQT" userLabel="boldLine" customClass="JXPageControlBoldLine" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="534" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="IxU-NW-blz"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="399" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYy-8l-CcC" userLabel="ellipse" customClass="JXPageControlEllipse" customModule="JXPageControl">
-                                <rect key="frame" x="16" y="584" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8wE-EL-wD7"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="434" width="343" height="30"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="10" height="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="25" height="10"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.065309289379999996" green="0.24636130140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="M3S-5t-MeK" secondAttribute="trailing" id="0BK-Bb-Ucm"/>
-                            <constraint firstItem="2TU-We-Oir" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="3pB-sk-Fx0"/>
-                            <constraint firstItem="wCE-Y4-cQT" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="4Bf-eG-5fz"/>
+                            <constraint firstItem="H3A-fL-cc9" firstAttribute="top" secondItem="j7O-9u-49E" secondAttribute="bottom" constant="5" id="2zM-zO-s10"/>
                             <constraint firstItem="jB1-4S-Ur8" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="4rx-Bq-d0Z"/>
-                            <constraint firstItem="DOI-Fc-PUU" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="5H0-Ri-TEt"/>
-                            <constraint firstItem="bYy-8l-CcC" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="5Ot-6R-hHQ"/>
+                            <constraint firstItem="MCO-md-3zl" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="71W-2H-Uwr"/>
+                            <constraint firstItem="bYy-8l-CcC" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="7on-Fr-sSc"/>
+                            <constraint firstItem="RvX-3L-ogN" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="7wo-pd-Qz9"/>
                             <constraint firstItem="jB1-4S-Ur8" firstAttribute="top" secondItem="xSD-8s-oa9" secondAttribute="bottom" constant="20" id="7xX-jf-oGO"/>
-                            <constraint firstItem="H3A-fL-cc9" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="9OH-AU-EFL"/>
-                            <constraint firstItem="jB1-4S-Ur8" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="AfT-06-6GQ"/>
+                            <constraint firstItem="H3A-fL-cc9" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="89j-kE-8rT"/>
+                            <constraint firstItem="Y1O-iw-u8e" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="9pV-7A-Pvk"/>
+                            <constraint firstItem="wCE-Y4-cQT" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="Bar-wR-Wa7"/>
                             <constraint firstItem="jB1-4S-Ur8" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="DCq-no-7UI"/>
-                            <constraint firstItem="mpF-Ug-Nr2" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="FHK-h7-y0l"/>
+                            <constraint firstItem="j7O-9u-49E" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="FVo-Ea-Eyq"/>
+                            <constraint firstItem="wCE-Y4-cQT" firstAttribute="top" secondItem="mpF-Ug-Nr2" secondAttribute="bottom" constant="5" id="GCj-Yh-bAF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jB1-4S-Ur8" secondAttribute="trailing" id="GkK-n5-qaJ"/>
-                            <constraint firstItem="Y1O-iw-u8e" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="Ixw-uZ-jeJ"/>
-                            <constraint firstItem="bYy-8l-CcC" firstAttribute="top" secondItem="wCE-Y4-cQT" secondAttribute="bottom" constant="20" id="KSW-68-IY6"/>
-                            <constraint firstItem="mpF-Ug-Nr2" firstAttribute="top" secondItem="RvX-3L-ogN" secondAttribute="bottom" constant="20" id="KuQ-bC-auF"/>
-                            <constraint firstItem="RvX-3L-ogN" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="L2S-ls-Ly3"/>
-                            <constraint firstItem="jB1-4S-Ur8" firstAttribute="top" secondItem="xSD-8s-oa9" secondAttribute="bottom" constant="20" id="Lax-JA-d00"/>
+                            <constraint firstItem="DOI-Fc-PUU" firstAttribute="top" secondItem="2TU-We-Oir" secondAttribute="bottom" constant="5" id="Hoq-Z2-Hee"/>
+                            <constraint firstItem="2TU-We-Oir" firstAttribute="top" secondItem="jB1-4S-Ur8" secondAttribute="bottom" constant="5" id="IZd-xG-KRt"/>
+                            <constraint firstItem="DOI-Fc-PUU" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="IhJ-Ix-UVr"/>
+                            <constraint firstItem="H3A-fL-cc9" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="KMc-38-Prv"/>
+                            <constraint firstItem="wCE-Y4-cQT" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="N6k-me-obZ"/>
                             <constraint firstItem="M3S-5t-MeK" firstAttribute="top" secondItem="ynh-R9-0U4" secondAttribute="bottom" constant="20" id="NVz-MP-2sm"/>
+                            <constraint firstItem="j7O-9u-49E" firstAttribute="top" secondItem="DOI-Fc-PUU" secondAttribute="bottom" constant="5" id="Ncf-x5-Vuv"/>
+                            <constraint firstItem="bYy-8l-CcC" firstAttribute="top" secondItem="wCE-Y4-cQT" secondAttribute="bottom" constant="5" id="O3E-fN-LSQ"/>
                             <constraint firstItem="ynh-R9-0U4" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="OXW-7O-kuS"/>
-                            <constraint firstItem="DOI-Fc-PUU" firstAttribute="top" secondItem="2TU-We-Oir" secondAttribute="bottom" constant="20" id="R2X-8a-XIy"/>
-                            <constraint firstItem="bYy-8l-CcC" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="Rlj-yT-Ao1"/>
-                            <constraint firstItem="H3A-fL-cc9" firstAttribute="top" secondItem="j7O-9u-49E" secondAttribute="bottom" constant="20" id="Rof-5i-MXn"/>
-                            <constraint firstItem="wCE-Y4-cQT" firstAttribute="top" secondItem="mpF-Ug-Nr2" secondAttribute="bottom" constant="20" id="RvT-Ah-oQU"/>
-                            <constraint firstItem="H3A-fL-cc9" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="V2S-bI-Aoy"/>
-                            <constraint firstItem="mpF-Ug-Nr2" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="Y3v-bE-Cwu"/>
-                            <constraint firstItem="wCE-Y4-cQT" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="ZPu-SL-mRG"/>
-                            <constraint firstItem="2TU-We-Oir" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="aDc-wx-YFb"/>
+                            <constraint firstItem="mpF-Ug-Nr2" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="TVj-Up-iWL"/>
+                            <constraint firstItem="2TU-We-Oir" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="VB0-Ce-82k"/>
+                            <constraint firstItem="mpF-Ug-Nr2" firstAttribute="top" secondItem="RvX-3L-ogN" secondAttribute="bottom" constant="5" id="Vcg-YU-IVQ"/>
+                            <constraint firstItem="MCO-md-3zl" firstAttribute="top" secondItem="H3A-fL-cc9" secondAttribute="bottom" constant="5" id="Wj4-52-mn7"/>
+                            <constraint firstItem="wCE-Y4-cQT" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="Xw0-MP-Pnc"/>
+                            <constraint firstItem="RvX-3L-ogN" firstAttribute="top" secondItem="Y1O-iw-u8e" secondAttribute="bottom" constant="5" id="YZc-6z-RT1"/>
+                            <constraint firstItem="DOI-Fc-PUU" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="aVy-xt-Zlc"/>
+                            <constraint firstItem="Y1O-iw-u8e" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="c9X-il-Yrx"/>
+                            <constraint firstItem="Y1O-iw-u8e" firstAttribute="top" secondItem="MCO-md-3zl" secondAttribute="bottom" constant="5" id="cQj-27-qbO"/>
+                            <constraint firstItem="RvX-3L-ogN" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="cmf-kQ-gus"/>
                             <constraint firstItem="jB1-4S-Ur8" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="cx7-6Q-7KL"/>
-                            <constraint firstItem="DOI-Fc-PUU" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="dS6-50-fXB"/>
-                            <constraint firstItem="MCO-md-3zl" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="eYH-L9-TLY"/>
-                            <constraint firstItem="RvX-3L-ogN" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="hdn-uv-l5m"/>
+                            <constraint firstItem="Y1O-iw-u8e" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="dHb-oO-9eT"/>
+                            <constraint firstItem="mpF-Ug-Nr2" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="fA0-ba-cXc"/>
                             <constraint firstItem="8fq-2y-M5z" firstAttribute="top" secondItem="M3S-5t-MeK" secondAttribute="bottom" id="iDN-Um-xnd"/>
-                            <constraint firstItem="j7O-9u-49E" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="kST-gy-XZU"/>
-                            <constraint firstItem="Y1O-iw-u8e" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="lfT-76-9ND"/>
-                            <constraint firstItem="j7O-9u-49E" firstAttribute="top" secondItem="DOI-Fc-PUU" secondAttribute="bottom" constant="20" id="oM4-n3-Se4"/>
-                            <constraint firstItem="MCO-md-3zl" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leadingMargin" id="p2L-NK-Izu"/>
-                            <constraint firstItem="MCO-md-3zl" firstAttribute="top" secondItem="H3A-fL-cc9" secondAttribute="bottom" constant="20" id="pR3-0h-RHL"/>
-                            <constraint firstItem="RvX-3L-ogN" firstAttribute="top" secondItem="Y1O-iw-u8e" secondAttribute="bottom" constant="20" id="poH-jL-hZc"/>
+                            <constraint firstItem="2TU-We-Oir" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="kNn-hn-7gS"/>
+                            <constraint firstItem="mpF-Ug-Nr2" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="lPp-p3-YcE"/>
+                            <constraint firstItem="H3A-fL-cc9" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="lYZ-7V-uuw"/>
+                            <constraint firstItem="bYy-8l-CcC" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="mgM-W5-qEi"/>
+                            <constraint firstItem="bYy-8l-CcC" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="nxE-pG-Cvu"/>
+                            <constraint firstItem="DOI-Fc-PUU" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="oYa-2G-gte"/>
+                            <constraint firstItem="RvX-3L-ogN" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="ovq-ip-NVP"/>
                             <constraint firstItem="M3S-5t-MeK" firstAttribute="leading" secondItem="mS8-b8-hRp" secondAttribute="leading" id="pvg-YL-Nmx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ynh-R9-0U4" secondAttribute="trailing" id="qDl-M2-WyT"/>
-                            <constraint firstItem="j7O-9u-49E" firstAttribute="trailing" secondItem="mS8-b8-hRp" secondAttribute="trailingMargin" id="tb1-B3-gP7"/>
-                            <constraint firstItem="2TU-We-Oir" firstAttribute="top" secondItem="jB1-4S-Ur8" secondAttribute="bottom" constant="20" id="ucW-Jt-R9F"/>
-                            <constraint firstItem="Y1O-iw-u8e" firstAttribute="top" secondItem="MCO-md-3zl" secondAttribute="bottom" constant="20" id="xK9-vh-O8C"/>
+                            <constraint firstItem="2TU-We-Oir" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="rxe-8j-hOY"/>
+                            <constraint firstItem="MCO-md-3zl" firstAttribute="height" secondItem="jB1-4S-Ur8" secondAttribute="height" id="t2b-yL-1sf"/>
+                            <constraint firstItem="j7O-9u-49E" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="uez-0r-3cV"/>
+                            <constraint firstItem="j7O-9u-49E" firstAttribute="width" secondItem="jB1-4S-Ur8" secondAttribute="width" id="wa6-zs-Fkz"/>
+                            <constraint firstItem="MCO-md-3zl" firstAttribute="centerX" secondItem="mS8-b8-hRp" secondAttribute="centerX" id="zXB-Ix-c2p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="jump" id="p3f-P9-AKc"/>
-                    <value key="contentSizeForViewInPopover" type="size" width="375" height="800"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="NoAnimation" destination="DOI-Fc-PUU" id="ewC-lP-B1m"/>
                         <outlet property="NoAnimationAndFlexble" destination="j7O-9u-49E" id="JgB-J5-g6Z"/>
@@ -514,9 +451,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="diameter">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opm-QY-9dC" userLabel="inactiveHollow" customClass="JXPageControlFill" customModule="JXPageControl">
@@ -526,13 +460,10 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="diameter">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.065309289379999996" green="0.24636130140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Opm-QY-9dC" firstAttribute="centerX" secondItem="3Fd-Eg-9LD" secondAttribute="centerX" id="5hk-eT-Mha"/>
                             <constraint firstAttribute="trailingMargin" secondItem="24E-ED-Q6D" secondAttribute="trailing" id="73d-Tg-koB"/>
@@ -660,12 +591,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="15" height="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeW-7l-Lgb" userLabel="toSmall" customClass="JXPageControlScale" customModule="JXPageControl">
@@ -675,10 +600,10 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="20" height="20"/>
+                                        <size key="value" width="15" height="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="15" height="15"/>
+                                        <size key="value" width="10" height="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -689,12 +614,6 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="15" height="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIs-h1-wtd" userLabel="allHollow" customClass="JXPageControlScale" customModule="JXPageControl">
@@ -702,12 +621,6 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="15" height="15"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isActiveHollow" value="YES"/>
@@ -720,10 +633,7 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="20" height="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="15" height="15"/>
+                                        <size key="value" width="15" height="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -734,16 +644,12 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="20" height="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="20" height="20"/>
+                                        <size key="value" width="15" height="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.065309289379999996" green="0.24636130140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.0" green="0.58431372550000005" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xHi-EE-cg9" firstAttribute="top" secondItem="PeW-7l-Lgb" secondAttribute="bottom" constant="40" id="0my-1O-TzM"/>
                             <constraint firstItem="y7S-NK-pAf" firstAttribute="centerX" secondItem="LjW-nl-t2E" secondAttribute="centerX" id="6D0-cb-Dei"/>
@@ -887,10 +793,7 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="20" height="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="20" height="20"/>
+                                        <size key="value" width="10" height="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -903,9 +806,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4V-b5-4H3" userLabel="inactivehollow" customClass="JXPageControlExchange" customModule="JXPageControl">
@@ -915,9 +815,6 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBv-KX-Goa" userLabel="activehollow" customClass="JXPageControlExchange" customModule="JXPageControl">
@@ -927,9 +824,6 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isActiveHollow" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWU-uR-eQH" userLabel="allHollow" customClass="JXPageControlExchange" customModule="JXPageControl">
@@ -937,9 +831,6 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isActiveHollow" value="YES"/>
@@ -952,18 +843,15 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="columnSpacing">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="activeSize">
-                                        <size key="value" width="20" height="13"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="inactiveSize">
-                                        <size key="value" width="13" height="13"/>
+                                        <size key="value" width="15" height="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.065309289379999996" green="0.24636130140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SJq-QT-7bY" firstAttribute="leading" secondItem="KWF-pV-suF" secondAttribute="leadingMargin" id="3BV-8n-EmF"/>
                             <constraint firstItem="hB5-gl-eek" firstAttribute="leading" secondItem="KWF-pV-suF" secondAttribute="leading" id="3LK-oQ-1O5"/>
@@ -1106,9 +994,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2c-r4-Kga" userLabel="inactivehollow" customClass="JXPageControlChameleon" customModule="JXPageControl">
@@ -1118,13 +1003,10 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isInactiveHollow" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="indicatorSize">
-                                        <size key="value" width="20" height="20"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.065309289379999996" green="0.24636130140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="38v-qg-gDn" firstAttribute="leading" secondItem="f1u-B0-Lxt" secondAttribute="leadingMargin" id="0xn-oG-7lh"/>
                             <constraint firstItem="l0G-yd-FDd" firstAttribute="top" secondItem="u2Z-qE-25B" secondAttribute="bottom" id="2SN-kI-mzJ"/>

@@ -39,22 +39,6 @@ end
 
 ### The UI effect 
 
-JXPageControlChameleon | JXPageControlFill 
-:-: | :-:   
-<img src="Gifs/chamelon.gif" width="220" height="140">  | <img src="Gifs/fill.gif" width="220" height="140">  
-
-JXPageControlChameleon |
-:-: | 
- <img src="Gifs/exchange1.gif" width="220" height="140"> <img src="Gifs/exchange2.gif" width="220" height="140"> |
-
-JXPageControlScale | JXPageControlScale | JXPageControlScale
-:-: | :-: | :-:   
-<img src="Gifs/scare1.gif" width="220" height="100"> | <img src="Gifs/scare2.gif" width="220" height="100">  | <img src="Gifs/scare3.gif" width="220" height="100">
-
-JXPageControlJump | JXPageControlJump | JXPageControlJump
-:-: | :-: | :-:   
-<img src="Gifs/jump1.gif" width="220" height="190"> | <img src="Gifs/jump2.gif" width="220" height="190">   | <img src="Gifs/jump3.gif" width="220" height="190">
-
 JXPageControlChameleon          |   JXPageControlExchange     |        JXPageControlFill 
 :-: | :-: | :-:   
 <img src="Images/chamelon.gif" width="144" height="88"> |  | <img src="Images/fill.gif" width="128" height="104">
