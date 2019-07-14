@@ -39,17 +39,24 @@ end
 
 ### The UI effect 
 
-<img src="Gifs/chamelon.gif" width="220" height="140"> --------- JXPageControlChameleon
-<img src="Gifs/fill.gif" width="220" height="140"> ---------  JXPageControlFill
-<img src="Gifs/exchange1.gif" width="220" height="140"> ---------  JXPageControlExchange
-<img src="Gifs/exchange2.gif" width="220" height="140"> ---------  JXPageControlExchange
-<img src="Gifs/scare1.gif" width="220" height="100"> ---------  JXPageControlScale
-<img src="Gifs/scare2.gif" width="220" height="100"> ---------  JXPageControlScale
-<img src="Gifs/scare3.gif" width="220" height="100"> ---------  JXPageControlScale
-<img src="Gifs/jump.gif" width="220" height="190"> ---------  JXPageControlJump
-<img src="Gifs/jump.gif" width="220" height="190"> ---------  JXPageControlJump
-<img src="Gifs/jump.gif" width="220" height="190"> ---------  JXPageControlJump
+JXPageControlChameleon | JXPageControlFill | JXPageControlChameleon
+:-: | :-: | :-:   
+<img src="Gifs/chamelon.gif" width="220" height="140">  |
+<img src="Gifs/fill.gif" width="220" height="140">  |
+<img src="Gifs/exchange1.gif" width="220" height="140"> 
+<img src="Gifs/exchange2.gif" width="220" height="140"> 
 
+JXPageControlScale | JXPageControlScale | JXPageControlScale
+:-: | :-: | :-:   
+<img src="Gifs/scare1.gif" width="220" height="100"> |
+<img src="Gifs/scare2.gif" width="220" height="100">  |
+<img src="Gifs/scare3.gif" width="220" height="100">
+
+JXPageControlJump | JXPageControlJump | JXPageControlJump
+:-: | :-: | :-:   
+<img src="Gifs/jump.gif" width="220" height="190"> |
+<img src="Gifs/jump.gif" width="220" height="190">   |
+<img src="Gifs/jump.gif" width="220" height="190">
 
 JXPageControlChameleon          |   JXPageControlExchange     |        JXPageControlFill 
 :-: | :-: | :-:   
