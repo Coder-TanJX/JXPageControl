@@ -39,6 +39,11 @@ end
 
 ### The UI effect 
 
+JXPageControlChameleon - JXPageControlFill   
+:-:
+<img src="Gifs/chamelon.gif" width="220" height="140"> <img src="Gifs/fill.gif" width="128" height="104">
+
+
 
 
 JXPageControlChameleon          |   JXPageControlExchange     |        JXPageControlFill 
@@ -51,26 +56,6 @@ JXPageControlChameleon          |   JXPageControlExchange     |        JXPageCon
 JXPageControlJump | JXPageControlScale
 :-: | :-: 
 <img src="Images/jump.gif" width="128" height="328"> | <img src="Images/scare.gif" width="128" height="300">
-
-
-
-<table>
-    <tr>
-            <th>方法说明</th>
-            <th>颜色名称</th>
-            <th>颜色</th>
-    </tr>
-    <tr>
-        <td><font color="Hotpink">此处实现方法利用 CSDN-markdown 内嵌 html 语言的优势</font></td>
-        <td><font color="Hotpink">Hotpink</font></td>
-        <td bgcolor="Hotpink">rgb(240, 248, 255)</td>
-    </tr>
-    <tr>
-        <td><font color="Pink" bgcolor=#FF00FF >借助 table, tr, td 等表格标签的 bgcolor 属性实现背景色设置</font></td>
-        <td><font color="pink" bgcolor=#FF00FF>AntiqueWhite</font></td>
-        <td bgcolor="Pink" bgcolor=#FF00FF>rgb(255, 192, 203)</td>
-    </tr>
-</table>
 
 ---
 
