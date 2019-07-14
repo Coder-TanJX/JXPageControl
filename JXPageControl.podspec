@@ -28,6 +28,15 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   
+  
+  if s.respond_to? 'swift_version'
+      s.swift_version = "4.0"
+  end
+  
+  if s.respond_to? 'swift_versions'
+      s.swift_versions = ['4.0', '4.2', '5.0']
+  end  
+  
   s.subspec 'Common' do |ss|
       ss.source_files = 'JXPageControl/Classes/Common/**/*'
       ss.public_header_files = 'JXPageControl/Classes/Common/**/*.h'
