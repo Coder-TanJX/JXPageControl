@@ -55,6 +55,11 @@ import UIKit
         }
     }
     
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        layoutContentView()
+    }
+    
     // MARK: --------------------------- JXPageControlType --------------------------
     
     /// Default is 0

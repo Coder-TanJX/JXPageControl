@@ -17,7 +17,7 @@ import UIKit
     @IBInspectable public var isFlexible: Bool = true
     
     @IBInspectable public var isAnimation: Bool = true
-
+    
     
     // MARK: - -------------------------- Update tht data --------------------------
     override func updateProgress(_ progress: CGFloat) {
@@ -30,11 +30,12 @@ import UIKit
         
         let marginX = (maxIndicatorSize.width - activeSize.width) * 0.5
         let marginyY = (maxIndicatorSize.height - activeSize.height) * 0.5
+        let marginW = (maxIndicatorSize.width - minIndicatorSize.width) * 0.5
         let x = progress * (maxIndicatorSize.width + columnSpacing) + marginX
         switch isFlexible {
         case true:
             let width = activeSize.width
-                + columnSpacing * (abs(round(progress) - progress) * 2)
+                + columnSpacing + marginW * (abs(round(progress) - progress) * 2)
             let newFrame = CGRect(x: x,
                                   y: marginyY,
                                   width: width,
@@ -57,6 +58,7 @@ import UIKit
         
         let marginX = (maxIndicatorSize.width - activeSize.width) * 0.5
         let activeLayerX = CGFloat(pageIndex) * (maxIndicatorSize.width + columnSpacing) + marginX
+        let marginW = (maxIndicatorSize.width - minIndicatorSize.width) * 0.5
         
         if isAnimation {
             CATransaction.begin()
@@ -68,11 +70,11 @@ import UIKit
             }
             
             if  pageIndex < currentIndex {
-                activeLayer.frame.origin.x = activeLayer.frame.origin.x - columnSpacing
+                activeLayer.frame.origin.x = activeLayer.frame.origin.x - columnSpacing - marginW
             }
             
             CATransaction.begin()
-            let width = activeSize.width + columnSpacing
+            let width = activeSize.width + columnSpacing + marginW
             activeLayer.frame.size.width = width
             CATransaction.commit()
             
@@ -134,13 +136,13 @@ import UIKit
     override func layoutActiveIndicator() {
         
         if let activeLayer = activeLayer  {
-
+            
             let x = (maxIndicatorSize.width - activeSize.width) * 0.5
             let y = (maxIndicatorSize.height - activeSize.height) * 0.5
             activeLayer.frame = CGRect(x: x,
-                                        y: y,
-                                        width: activeSize.width,
-                                        height: activeSize.height)
+                                       y: y,
+                                       width: activeSize.width,
+                                       height: activeSize.height)
             if activeLayer.frame.width > activeLayer.frame.height {
                 activeLayer.cornerRadius = activeLayer.frame.height*0.5
             }else {
