@@ -39,18 +39,15 @@ Pod::Spec.new do |s|
   
   s.subspec 'Common' do |ss|
       ss.source_files = 'JXPageControl/Classes/Common/**/*'
-      ss.public_header_files = 'JXPageControl/Classes/Common/**/*.h'
   end
   
   s.subspec 'Jump' do |ss|
       ss.source_files = 'JXPageControl/Classes/Jump/**/*'
-      ss.public_header_files = 'JXPageControl/Classes/Jump/**/*.h'
       ss.dependency 'JXPageControl/Common'
   end
   
   s.subspec 'Transform' do |ss|
       ss.source_files = 'JXPageControl/Classes/Transform/**/*'
-      ss.public_header_files = 'JXPageControl/Classes/Transform/**/*.h'
       ss.dependency 'JXPageControl/Common'
   end
   

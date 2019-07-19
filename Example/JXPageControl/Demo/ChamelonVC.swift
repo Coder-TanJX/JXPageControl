@@ -41,7 +41,6 @@ class ChamelonVC: UIViewController {
         
         // JXPageControlJump: default "custom property"
         pageControl.isAnimation  = true
-        pageControl.isFlexible = true
         
         return pageControl
     }()

@@ -14,7 +14,6 @@ import UIKit
     }
     
     // MARK: - -------------------------- Custom property list --------------------------
-    @IBInspectable public var isFlexible: Bool = true
     
     @IBInspectable public var isAnimation: Bool = true
     
@@ -32,7 +31,7 @@ import UIKit
         let marginyY = (maxIndicatorSize.height - activeSize.height) * 0.5
         let marginW = (maxIndicatorSize.width - minIndicatorSize.width) * 0.5
         let x = progress * (maxIndicatorSize.width + columnSpacing) + marginX
-        switch isFlexible {
+        switch isAnimation {
         case true:
             let width = activeSize.width
                 + columnSpacing + marginW * (abs(round(progress) - progress) * 2)
