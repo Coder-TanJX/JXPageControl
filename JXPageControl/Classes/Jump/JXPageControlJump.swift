@@ -7,9 +7,9 @@
 
 import UIKit
 
-@IBDesignable public class JXPageControlJump: JXPageControlBase {
+@IBDesignable open class JXPageControlJump: JXPageControlBase {
     
-    override func setBase() {
+    override open func setBase() {
         super.setBase()
     }
     
@@ -31,10 +31,11 @@ import UIKit
         let marginyY = (maxIndicatorSize.height - activeSize.height) * 0.5
         let marginW = (maxIndicatorSize.width - minIndicatorSize.width) * 0.5
         let x = progress * (maxIndicatorSize.width + columnSpacing) + marginX
+
         switch isAnimation {
         case true:
             let width = activeSize.width
-                + columnSpacing + marginW * (abs(round(progress) - progress) * 2)
+                + (columnSpacing + marginW) * (abs(round(progress) - progress) * 2)
             let newFrame = CGRect(x: x,
                                   y: marginyY,
                                   width: width,

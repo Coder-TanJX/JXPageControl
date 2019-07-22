@@ -31,6 +31,7 @@ class JumpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.automaticallyAdjustsScrollViewInsets = false
         scrollView.delegate = self
     }
     
