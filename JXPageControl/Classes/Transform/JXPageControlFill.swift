@@ -226,7 +226,7 @@ extension JXPageControlFill {
         })
         
         let mask = CAShapeLayer()
-        mask.fillRule = kCAFillRuleEvenOdd
+        mask.fillRule = CAShapeLayerFillRule.evenOdd
         let bounds = UIBezierPath(rect: layer.bounds)
         bounds.append(UIBezierPath(ovalIn: insetRect))
         mask.path = bounds.cgPath

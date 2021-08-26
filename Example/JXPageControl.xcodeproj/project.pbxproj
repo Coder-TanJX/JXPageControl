@@ -48,6 +48,7 @@
 		607FACE51AFB9204008FA782 /* JXPageControl_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXPageControl_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6E77405A26D77C380010175C /* ReleaseNote.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = ReleaseNote.md; path = ../ReleaseNote.md; sourceTree = "<group>"; };
 		A8CB0AF3FED8097793856774 /* Pods-JXPageControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXPageControl_Example.release.xcconfig"; path = "Target Support Files/Pods-JXPageControl_Example/Pods-JXPageControl_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AC47C10AF61EDBD42216C3D7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C7A289031C73B4FF5F3F6399 /* Pods-JXPageControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXPageControl_Example.debug.xcconfig"; path = "Target Support Files/Pods-JXPageControl_Example/Pods-JXPageControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +161,7 @@
 			children = (
 				43B346F57B28778FC3D9EDB8 /* JXPageControl.podspec */,
 				AC47C10AF61EDBD42216C3D7 /* README.md */,
+				6E77405A26D77C380010175C /* ReleaseNote.md */,
 				2022475EB28DA4F7E79ECD61 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
@@ -488,7 +490,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "JXPageControl/JXPageControl_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -506,7 +508,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "JXPageControl/JXPageControl_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JXPageControl'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Custom UIPageControl: supports multiple animations, layouts'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
   
   if s.respond_to? 'swift_version'
-      s.swift_version = "4.0"
+      s.swift_version = "5.0"
   end
   
   if s.respond_to? 'swift_versions'
