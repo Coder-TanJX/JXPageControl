@@ -26,6 +26,7 @@ import UIKit
             else { return }
         
         CATransaction.setDisableActions(!isAnimation)
+        CATransaction.begin()
         
         let marginX = (maxIndicatorSize.width - activeSize.width) * 0.5
         let marginyY = (maxIndicatorSize.height - activeSize.height) * 0.5

@@ -29,6 +29,7 @@ import UIKit
         if leftIndex == rightIndex {
             
             CATransaction.setDisableActions(true)
+            CATransaction.begin()
             
             let marginX: CGFloat = maxIndicatorSize.width + columnSpacing
             
@@ -59,6 +60,7 @@ import UIKit
         }else {
             
             CATransaction.setDisableActions(true)
+            CATransaction.begin()
             
             let marginX: CGFloat = maxIndicatorSize.width + columnSpacing
             

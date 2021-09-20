@@ -64,6 +64,7 @@ import UIKit
 
 
             CATransaction.setDisableActions(true)
+            CATransaction.begin()
             
             let tempInactiveColor = isInactiveHollow ? UIColor.clear : inactiveColor
             let tempActiveColor = (isInactiveHollow && isActiveHollow) ? UIColor.clear : activeColor
